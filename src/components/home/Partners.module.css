@@ -1,0 +1,231 @@
+.partnersSection {}
+
+/* ─── Official Partners (dark bg) ──────────────────────────────────────── */
+.officialPartners {
+  background: var(--dark-900);
+  padding: var(--section-py) 0;
+}
+
+.opHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.opTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.opGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.opCard {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(22,163,74,0.2);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  transition: all var(--transition);
+}
+.opCard:hover {
+  background: rgba(22,163,74,0.06);
+  border-color: rgba(22,163,74,0.35);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-green);
+}
+
+.opBadge {
+  display: inline-flex;
+  padding: 0.3rem 0.875rem;
+  background: rgba(22,163,74,0.15);
+  color: #4ade80;
+  border: 1px solid rgba(22,163,74,0.3);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.opBadge2 {
+  display: inline-flex;
+  padding: 0.3rem 0.875rem;
+  background: rgba(245,158,11,0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245,158,11,0.3);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.opLogoWrap {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.opLogo {
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  max-height: 48px;
+  width: auto;
+}
+
+.opLogoFallback {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.opName {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.opDesc {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.opLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4ade80;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+.opLink:hover { opacity: 0.75; }
+
+/* ─── Clients ────────────────────────────────────────────────────────────── */
+.clientsSection {
+  background: var(--gray-50);
+  padding: var(--section-py) 0;
+}
+
+/* ─── Ticker ─────────────────────────────────────────────────────────────── */
+.tickerWrapper {
+  overflow: hidden;
+  margin: 0 -1.5rem 3rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--white);
+}
+
+.ticker {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: ticker-scroll 24s linear infinite;
+}
+
+.ticker:hover { animation-play-state: paused; }
+
+.tickerItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  font-family: var(--font-display);
+}
+
+.tickerDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  flex-shrink: 0;
+}
+
+/* ─── Clients Grid ────────────────────────────────────────────────────────── */
+.clientsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.clientCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 2rem 1.5rem;
+  background: var(--white);
+  border: 1.5px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  text-align: center;
+}
+
+.clientCard:hover {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.07), var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.clientLogoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+}
+
+.clientLogoImg {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: all var(--transition);
+}
+
+.clientCard:hover .clientLogoImg {
+  transform: scale(1.05);
+}
+
+.clientInitial {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--brand-primary), #15803d);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .clientsGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .opGrid { grid-template-columns: 1fr; max-width: 480px; }
+}
+
+@media (max-width: 640px) {
+  .clientsGrid { grid-template-columns: repeat(2, 1fr); }
+}

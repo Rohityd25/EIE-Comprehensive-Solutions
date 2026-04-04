@@ -1,0 +1,185 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 7rem 0 0;
+}
+
+/* ─── Slideshow Backgrounds ─────────────────────────────────────────────── */
+.slideBg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  transform: scale(1.03);
+  transition: opacity 0.8s ease, transform 6s ease;
+}
+
+.slideActive {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ─── Overlays ──────────────────────────────────────────────────────────── */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+.greenOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(22, 163, 74, 0.15) 0%,
+    transparent 60%
+  );
+  z-index: 2;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(22, 163, 74, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 163, 74, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ─── Content ───────────────────────────────────────────────────────────── */
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 780px;
+  padding-bottom: 8rem;
+}
+
+/* ─── Logo ──────────────────────────────────────────────────────────────── */
+.logoWrap {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+
+/* ─── Badge ─────────────────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 1.125rem;
+  background: rgba(22, 163, 74, 0.15);
+  border: 1px solid rgba(22, 163, 74, 0.4);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #4ade80;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+}
+
+.badgeDot {
+  width: 8px; height: 8px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulse-slow 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+/* ─── Title ─────────────────────────────────────────────────────────────── */
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.heroHighlight {
+  background: linear-gradient(135deg, #4ade80, #86efac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubLine {
+  color: rgba(255,255,255,0.85);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+/* ─── Description ───────────────────────────────────────────────────────── */
+.heroDesc {
+  font-size: clamp(0.9375rem, 1.8vw, 1.125rem);
+  color: rgba(255,255,255,0.72);
+  line-height: 1.8;
+  max-width: 580px;
+  margin-bottom: 2.5rem;
+}
+
+/* ─── Fade animations ────────────────────────────────────────────────────── */
+.fadeIn {
+  animation: fadeInUp 0.5s ease both;
+}
+.fadeOut {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+}
+
+/* ─── CTA ───────────────────────────────────────────────────────────────── */
+.heroCta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+/* ─── Slide Nav ─────────────────────────────────────────────────────────── */
+.slideNav {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.slideDot {
+  width: 32px;
+  height: 4px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 2px;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.slideDotActive {
+  background: var(--brand-primary);
+  width: 52px;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero { padding-top: 6rem; }
+  .heroContent { padding-bottom: 10rem; }
+}
+
+@media (max-width: 480px) {
+  .heroCta { flex-direction: column; }
+}

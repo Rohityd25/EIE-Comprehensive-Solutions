@@ -1,0 +1,223 @@
+.hero {
+  padding: 8rem 0 4rem;
+  background: linear-gradient(180deg, #f0fdf4 0%, var(--white) 100%);
+  border-bottom: 1px solid var(--gray-100);
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.heroSubtitle {
+  font-size: 1.125rem;
+  color: var(--gray-500);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ─── Mission/Vision/Values ──────────────────────────────────────────────── */
+.mvGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mvCard {
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  border: 1.5px solid var(--gray-100);
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+  border-top: 4px solid var(--mv-color, var(--brand-primary));
+}
+
+.mvCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+.mvIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.mvTitle {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.mvDesc {
+  font-size: 0.9375rem;
+  color: var(--gray-500);
+  line-height: 1.8;
+}
+
+/* ─── Timeline ───────────────────────────────────────────────────────────── */
+.storyTimeline {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  position: relative;
+}
+
+.storyTimeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--brand-primary), transparent);
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timelineLeft {
+  flex-direction: row;
+}
+
+.timelineRight {
+  flex-direction: row-reverse;
+}
+
+.timelineYear {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+  min-width: 80px;
+  text-align: center;
+  background: rgba(10, 92, 54, 0.08);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+}
+
+.timelineContent {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  flex: 1;
+  transition: all var(--transition);
+}
+
+.timelineContent:hover {
+  border-color: var(--brand-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.timelineTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.375rem;
+}
+
+.timelineDesc {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+/* ─── Clients Note ───────────────────────────────────────────────────────── */
+.clientsNote {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(10, 92, 54, 0.05);
+  border: 1px solid rgba(10, 92, 54, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  font-size: 1.0625rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.clientsNote strong {
+  color: var(--brand-primary);
+  font-weight: 700;
+}
+
+/* ─── Partners ───────────────────────────────────────────────────────────── */
+.partnersGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.partnerCardFull, .partnerCard {
+  background: var(--white);
+  border: 1.5px solid var(--gray-100);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.partnerBadge {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background: rgba(10, 92, 54, 0.1);
+  color: var(--brand-primary);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.partnerBadge2 {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.partnerName {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.partnerDesc {
+  font-size: 0.9375rem;
+  color: var(--gray-500);
+  line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+  .mvGrid { grid-template-columns: 1fr; }
+  .partnersGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .storyTimeline::before { left: 40px; }
+  .timelineItem { flex-direction: row !important; }
+  .timelineRight { flex-direction: row !important; }
+}
