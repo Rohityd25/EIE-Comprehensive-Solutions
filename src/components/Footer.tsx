@@ -167,7 +167,7 @@ export default function Footer() {
           <div className={styles.footerBottomContent}>
             <p>© {currentYear} EIE Comprehensive Solutions. All rights reserved.</p>
             <p className={styles.footerBottomRight}>
-              Made with ❤️ in India | Environmental Engineering Excellence
+             
             </p>
           </div>
         </div>

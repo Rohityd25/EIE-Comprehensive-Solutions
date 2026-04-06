@@ -31,7 +31,7 @@ export default function ContactPage() {
        * Replace 'YOUR_WEB3FORMS_ACCESS_KEY_HERE' with a free access key from https://web3forms.com
        */
       const submissionData = {
-        access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE",
+        access_key: "e909c310-1429-41ea-aa53-59fe53c063ec",
         ...form
       };
 
