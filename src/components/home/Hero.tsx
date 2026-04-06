@@ -86,8 +86,7 @@ export default function Hero() {
       <div className={styles.overlay} aria-hidden="true" />
       {/* Green gradient overlay */}
       <div className={styles.greenOverlay} aria-hidden="true" />
-      {/* Grid pattern */}
-      <div className={styles.gridOverlay} aria-hidden="true" />
+    
 
       <div className="container">
         <div className={styles.heroContent}>

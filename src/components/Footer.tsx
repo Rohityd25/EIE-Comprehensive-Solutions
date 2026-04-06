@@ -93,7 +93,7 @@ export default function Footer() {
                 Pioneering environmental and engineering solutions with a commitment to innovation, precision, and a greener future.
               </p>
               <div className={styles.footerContact}>
-                <p>📍 D-8, Mansarover Park, New Delhi-110032</p>
+                <p>📍 A-26, Pushpanjali Enclave, Pitampura, New Delhi-110034</p>
                 <p>📞 9882810053, 9358536247</p>
                 <p>✉️ marketing@eieindia.in</p>
               </div>
