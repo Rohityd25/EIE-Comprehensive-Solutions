@@ -48,8 +48,8 @@ export default function Navbar() {
             <Image
               src="/images/eie-logo.png"
               alt="EIE Comprehensive Solutions"
-              width={140}
-              height={48}
+              width={220}
+              height={76}
               className={styles.logoImg}
               priority
             />
