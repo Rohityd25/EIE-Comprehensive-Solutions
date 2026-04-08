@@ -86,37 +86,25 @@ export default function Partners() {
             </p>
           </div>
 
-          {/* Scrolling ticker */}
-          <div className={styles.tickerWrapper} aria-hidden="true">
-            <div className={styles.ticker}>
-              {[...clients, ...clients].map((client, i) => (
-                <div key={`${client.name}-${i}`} className={styles.tickerItem}>
-                  <div className={styles.tickerDot} />
-                  <span>{client.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Client grid */}
-          <div className={styles.clientsGrid}>
-            {clients.map((client) => (
-              <div key={client.name} className={styles.clientCard}>
-                <div className={styles.clientLogoWrap}>
+          {/* Logo Scrolling Ticker */}
+          <div className={styles.logoTickerWrapper} aria-hidden="true">
+            <div className={styles.logoTicker}>
+              {[...clients, ...clients, ...clients, ...clients].map((client, i) => (
+                <div key={`${client.name}-${i}`} className={styles.logoTickerCard}>
                   {client.logo ? (
                     <Image
                       src={client.logo}
                       alt={client.name}
-                      width={120}
-                      height={60}
-                      className={styles.clientLogoImg}
+                      width={200}
+                      height={100}
+                      className={styles.tickerLogoImg}
                     />
                   ) : (
                     <div className={styles.clientInitial}>{client.name.charAt(0)}</div>
                   )}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className={styles.cpcbSection}>

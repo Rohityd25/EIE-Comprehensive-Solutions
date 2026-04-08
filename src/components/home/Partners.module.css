@@ -120,87 +120,54 @@
   padding: var(--section-py) 0;
 }
 
-/* ─── Ticker ─────────────────────────────────────────────────────────────── */
-.tickerWrapper {
+/* ─── Logo Ticker ────────────────────────────────────────────────────────── */
+.logoTickerWrapper {
   overflow: hidden;
-  margin: 0 -1.5rem 3rem;
-  padding: 1.25rem 0;
-  border-top: 1px solid var(--gray-200);
-  border-bottom: 1px solid var(--gray-200);
-  background: var(--white);
+  margin: 3rem -1.5rem;
+  padding: 1rem 0;
+  width: calc(100% + 3rem);
 }
 
-.ticker {
+.logoTicker {
   display: flex;
   gap: 2rem;
   width: max-content;
-  animation: ticker-scroll 24s linear infinite;
+  animation: logo-ticker-scroll 40s linear infinite;
 }
 
-.ticker:hover { animation-play-state: paused; }
+.logoTicker:hover { 
+  animation-play-state: paused; 
+}
 
-.tickerItem {
+.logoTickerCard {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  white-space: nowrap;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--gray-500);
-  font-family: var(--font-display);
-}
-
-.tickerDot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--brand-accent);
-  flex-shrink: 0;
-}
-
-/* ─── Clients Grid ────────────────────────────────────────────────────────── */
-.clientsGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
-
-.clientCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.875rem;
-  padding: 2rem 1.5rem;
+  justify-content: center;
   background: var(--white);
   border: 1.5px solid var(--gray-100);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  width: 280px;
+  height: 140px;
   transition: all var(--transition);
-  text-align: center;
+  flex-shrink: 0;
 }
 
-.clientCard:hover {
+.logoTickerCard:hover {
   border-color: var(--brand-primary);
   box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.07), var(--shadow-lg);
   transform: translateY(-3px);
 }
 
-.clientLogoWrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  width: 100%;
-}
-
-.clientLogoImg {
-  max-height: 100%;
+.tickerLogoImg {
   max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   transition: all var(--transition);
 }
 
-.clientCard:hover .clientLogoImg {
+.logoTickerCard:hover .tickerLogoImg {
   transform: scale(1.05);
 }
 
@@ -218,14 +185,12 @@
   font-weight: 800;
 }
 
-@media (max-width: 1024px) {
-  .clientsGrid { grid-template-columns: repeat(3, 1fr); }
+@keyframes logo-ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 @media (max-width: 768px) {
   .opGrid { grid-template-columns: 1fr; max-width: 480px; }
-}
-
-@media (max-width: 640px) {
-  .clientsGrid { grid-template-columns: repeat(2, 1fr); }
+  .logoTickerCard { width: 220px; height: 120px; }
 }
