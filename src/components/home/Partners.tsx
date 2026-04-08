@@ -107,16 +107,7 @@ export default function Partners() {
             </div>
           </div>
 
-          <div className={styles.cpcbSection}>
-            <div className="divider" style={{ margin: "2rem auto" }} />
-            <h3 style={{ textAlign: "center", marginBottom: "2rem", color: "var(--gray-900)" }}>
-              Providing Real-Time Data Compliance For
-            </h3>
-            <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "2rem" }}>
-              <Image src="/images/34.png" alt="CPCB & SPCB" width={600} height={150} style={{ objectFit: 'contain' }} unoptimized />
-              <Image src="/images/35.png" alt="Certifications" width={600} height={150} style={{ objectFit: 'contain' }} unoptimized />
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
