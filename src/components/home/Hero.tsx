@@ -33,15 +33,7 @@ const slides = [
     subtitle: "Management Solutions",
     desc: "Online effluent monitoring, water quality analyzers and BOD/COD measurement systems compliant with SPCB norms.",
   },
-  {
-    id: 4,
-    image: "/images/emission-control.jpg",
-    badge: "Pollution Abatement Technology",
-    title: "Retrofit Emission",
-    highlight: "Control Devices",
-    subtitle: "for Greener Industry",
-    desc: "Scrubbers, bag filters, ESPs and dual-fuel systems that help industries reduce their environmental footprint significantly.",
-  },
+
 ];
 
 export default function Hero() {
@@ -86,7 +78,7 @@ export default function Hero() {
       <div className={styles.overlay} aria-hidden="true" />
       {/* Green gradient overlay */}
       <div className={styles.greenOverlay} aria-hidden="true" />
-    
+
 
       <div className="container">
         <div className={styles.heroContent}>
