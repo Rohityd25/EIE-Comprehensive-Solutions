@@ -88,7 +88,7 @@ export default function About() {
                 className={styles.partnerLogoImg}
               />
               <span className={styles.partnerSep}>·</span>
-              <span className={styles.partnerText}>Made in India</span>
+
             </div>
 
             <Link href="/about" className="btn btn-primary" style={{ marginTop: "2rem" }}>
