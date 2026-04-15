@@ -95,8 +95,8 @@ export default function Partners() {
                     <Image
                       src={client.logo}
                       alt={client.name}
-                      width={260}
-                      height={130}
+                      width={380}
+                      height={180}
                       className={styles.tickerLogoImg}
                     />
                   ) : (

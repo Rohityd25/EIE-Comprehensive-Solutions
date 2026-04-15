@@ -147,9 +147,9 @@
   border: 1.5px solid var(--gray-100);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  padding: 1rem;
-  width: 300px;
-  height: 150px;
+  padding: 1.5rem;
+  width: 380px;
+  height: 180px;
   transition: all var(--transition);
   flex-shrink: 0;
 }
@@ -164,14 +164,14 @@
   width: auto;
   height: auto;
   max-width: 95%;
-  max-height: 110px;
+  max-height: 140px;
   object-fit: contain;
   transition: all var(--transition);
-  transform: scale(1.2); /* Boosts size visually due to transparent padding of source logos */
+  transform: scale(1.35); /* Boosts size visually due to transparent padding of source logos */
 }
 
 .logoTickerCard:hover .tickerLogoImg {
-  transform: scale(1.3);
+  transform: scale(1.5);
 }
 
 .clientInitial {
@@ -195,5 +195,5 @@
 
 @media (max-width: 768px) {
   .opGrid { grid-template-columns: 1fr; max-width: 480px; }
-  .logoTickerCard { width: 220px; height: 120px; }
+  .logoTickerCard { width: 260px; height: 130px; }
 }
