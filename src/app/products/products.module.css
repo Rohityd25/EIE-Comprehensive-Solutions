@@ -171,18 +171,61 @@
   flex-shrink: 0;
 }
 
-.productCta {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--brand-primary);
+.productCtaGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   padding-top: 1rem;
   border-top: 1px solid var(--gray-100);
-  display: block;
-  transition: opacity var(--transition-fast);
-  text-decoration: none;
   margin-top: auto;
+  flex-wrap: wrap;
 }
-.productCta:hover { opacity: 0.7; }
+
+.productCtaPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--brand-primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+.productCtaPrimary:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(22,163,74,0.35);
+}
+
+.productCtaDisabled {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  background: var(--gray-100);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  white-space: nowrap;
+  cursor: default;
+  flex-shrink: 0;
+}
+
+.productCtaSecondary {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+  white-space: nowrap;
+  margin-left: auto;
+}
+.productCtaSecondary:hover { opacity: 0.7; }
 
 /* ─── Services Banner ────────────────────────────────────────────────────── */
 .servicesBanner {

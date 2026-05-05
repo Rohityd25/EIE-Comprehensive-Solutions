@@ -2,6 +2,7 @@
   padding: 4rem 0;
   background: var(--dark-800);
   border-bottom: 1px solid rgba(22,163,74,0.1);
+  overflow: hidden;
 }
 
 .statsGrid {
@@ -10,47 +11,117 @@
   gap: 1.5rem;
 }
 
+/* ─── Card Base (starts hidden, slides up on visible) ──────────────────── */
 .statCard {
   background: rgba(255,255,255,0.03);
   border-radius: var(--radius-lg);
   padding: 2rem 1.5rem;
   text-align: center;
   border: 1px solid rgba(255,255,255,0.06);
-  transition: all var(--transition);
-  animation: fadeInUp 0.5s ease both;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* hidden state */
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    background var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.statCardVisible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .statCard:hover {
-  transform: translateY(-4px);
-  background: rgba(22,163,74,0.06);
-  border-color: rgba(22,163,74,0.25);
+  transform: translateY(-6px) scale(1.02);
+  background: rgba(22,163,74,0.07);
+  border-color: rgba(22,163,74,0.28);
   box-shadow: var(--shadow-green);
 }
 
+/* ─── Icon ──────────────────────────────────────────────────────────────── */
 .statIcon {
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   border-radius: var(--radius-lg);
+  border: 1.5px solid transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0 auto 1.25rem;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
 }
 
+.statIconPop {
+  animation: iconPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes iconPop {
+  0%   { transform: scale(0.4) rotate(-10deg); opacity: 0; }
+  70%  { transform: scale(1.15) rotate(4deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.statCard:hover .statIcon {
+  transform: scale(1.18) rotate(-4deg);
+  box-shadow: 0 0 18px rgba(255,255,255,0.12);
+}
+
+/* ─── Number ────────────────────────────────────────────────────────────── */
 .statNumber {
   font-family: var(--font-display);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 800;
   color: var(--white);
   line-height: 1;
   margin-bottom: 0.375rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
 }
 
+.statSuffix {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.55);
+}
+
+/* Shimmer sweep across number when counting completes */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #4ade80 40%,
+    #86efac 55%,
+    #fff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmerSweep 1.2s ease forwards;
+}
+
+@keyframes shimmerSweep {
+  0%   { background-position: 150% center; }
+  100% { background-position: -50% center; }
+}
+
+/* ─── Label & Desc ──────────────────────────────────────────────────────── */
 .statLabel {
   font-size: 1rem;
   font-weight: 600;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.8);
   margin-bottom: 0.5rem;
 }
 
@@ -58,8 +129,30 @@
   font-size: 0.875rem;
   color: rgba(255,255,255,0.4);
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
+/* ─── Bottom Accent Bar ─────────────────────────────────────────────────── */
+.accentBar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 0%;
+  border-radius: 99px;
+  transition: width 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.accentBarGrow {
+  width: 60%;
+}
+
+.statCard:hover .accentBar {
+  width: 85%;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .statsGrid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -68,4 +161,5 @@
   .statsGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .statCard { padding: 1.5rem 1rem; }
   .statNumber { font-size: 2rem; }
+  .statSuffix { font-size: 1.2rem; }
 }

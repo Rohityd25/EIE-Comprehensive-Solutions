@@ -29,6 +29,7 @@ const products = [
     features: ["SO₂, NO₂, CO, O₃, H₂S", "Differential Optical Absorption", "CPCB Protocol ready", "Remote data transmission"],
     tag: "CPCB Approved",
     tagColor: "#16a34a",
+    catalogue: "/catalogues/opsis-ar500.pdf",
   },
   {
     id: 2,
@@ -42,6 +43,7 @@ const products = [
     features: ["SO₂, NOx, CO, CO₂, HCl", "In-situ & extractive", "MoEF/CPCB compliant", "DAS & reporting software"],
     tag: "MoEF Compliant",
     tagColor: "#1e40af",
+    catalogue: "/catalogues/opsis-sm701.pdf",
   },
   {
     id: 3,
@@ -55,6 +57,7 @@ const products = [
     features: ["0–2000 mg/m³ range", "Laser optical sensor", "Temperature compensated", "4-20mA RS-485 output"],
     tag: "Stack Monitoring",
     tagColor: "#b45309",
+    catalogue: "/catalogues/sem-7000.pdf",
   },
   {
     id: 4,
@@ -68,6 +71,7 @@ const products = [
     features: ["PM₁, PM₂.₅, PM₁₀, PM₄", "NO₂, O₃, CO, SO₂", "GSM/WiFi/LoRa options", "Cloud data platform"],
     tag: "IoT Sensor",
     tagColor: "#7c3aed",
+    catalogue: "/catalogues/aqmesh.pdf",
   },
   {
     id: 5,
@@ -81,6 +85,7 @@ const products = [
     features: ["8 simultaneous parameters", "pH, DOx, Cond, Turbidity", "ORP, Cl₂, NO₃⁻, Temp", "IP-68 submersible probe"],
     tag: "Water Quality",
     tagColor: "#0891b2",
+    catalogue: "/catalogues/watersens-pro8.pdf",
   },
   {
     id: 6,
@@ -94,6 +99,7 @@ const products = [
     features: ["pH, BOD, COD, TSS", "Flow rate measurement", "SPCB server connectivity", "24/7 monitoring & alerts"],
     tag: "SPCB Approved",
     tagColor: "#16a34a",
+    catalogue: "/catalogues/eff-cems.pdf",
   },
   {
     id: 7,
@@ -107,6 +113,7 @@ const products = [
     features: ["Ultrasonic wind sensor", "Solar radiation pyranometer", "Tipping bucket rain gauge", "Barometric pressure sensor"],
     tag: "Meteorological",
     tagColor: "#0284c7",
+    catalogue: "/catalogues/aws-pro.pdf",
   },
   {
     id: 8,
@@ -120,6 +127,7 @@ const products = [
     features: ["IEC 61672 Class 1", "dB(A), dB(C), dB(Z)", "Leq, Lmax, Lmin, L10", "Data logger 8GB SD card"],
     tag: "Type 1 Certified",
     tagColor: "#b45309",
+    catalogue: "/catalogues/noisetrack.pdf",
   },
   {
     id: 9,
@@ -133,13 +141,13 @@ const products = [
     features: ["Path length 10–500m", "SO₂, NO₂, BTX, NH₃", "No sampling system needed", "Fence-line monitoring ready"],
     tag: "Open Path",
     tagColor: "#16a34a",
+    catalogue: "/catalogues/doas700.pdf",
   },
 ];
 
 export default function ProductsPage() {
   return (
     <>
-      {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <div className={styles.heroBgImg} />
@@ -161,7 +169,6 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Products Grid */}
       <section className="section">
         <div className="container">
           <div className="section-header">
@@ -177,7 +184,6 @@ export default function ProductsPage() {
           <div className={styles.productGrid}>
             {products.map((product) => (
               <div key={product.id} className={styles.productCard}>
-                {/* Top */}
                 <div className={styles.productTop}>
                   <div className={styles.productIcon}>{product.icon}</div>
                   <span
@@ -202,16 +208,41 @@ export default function ProductsPage() {
                   ))}
                 </ul>
 
-                <Link href="/contact" className={styles.productCta}>
-                  Request Datasheet / Quote →
-                </Link>
+                <div className={styles.productCtaGroup}>
+                  {product.catalogue ? (
+                    <a
+                      href={product.catalogue}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.productCtaPrimary}
+                    >
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                        <line x1="12" y1="18" x2="12" y2="12"/>
+                        <polyline points="9,15 12,18 15,15"/>
+                      </svg>
+                      Download Catalogue
+                    </a>
+                  ) : (
+                    <span className={styles.productCtaDisabled}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                      </svg>
+                      Catalogue Coming Soon
+                    </span>
+                  )}
+                  <Link href="/contact" className={styles.productCtaSecondary}>
+                    Request Quote →
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Services Banner */}
       <section className={styles.servicesBanner}>
         <div className="container">
           <div className={styles.bannerGrid}>

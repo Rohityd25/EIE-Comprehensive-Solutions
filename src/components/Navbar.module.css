@@ -52,18 +52,6 @@
   height: 68px;
   width: auto;
   object-fit: contain;
-  transition: filter var(--transition-fast);
-}
-
-/* On dark (hero) pages, boost brightness for logo */
-.header.heroPage:not(.scrolled) .logoImg {
-  filter: brightness(0) invert(1);
-}
-
-/* On white navbar, show logo naturally */
-.header:not(.heroPage) .logoImg,
-.header.heroPage.scrolled .logoImg {
-  filter: none;
 }
 
 /* ─── Nav Links ─────────────────────────────────────────────────────────── */

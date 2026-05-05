@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "./Hero.module.css";
 
 const slides = [
@@ -82,18 +81,6 @@ export default function Hero() {
 
       <div className="container">
         <div className={styles.heroContent}>
-          {/* EIE Logo */}
-          <div className={styles.logoWrap}>
-            <Image
-              src="/images/eie-logo.png"
-              alt="EIE Comprehensive Solutions"
-              width={180}
-              height={60}
-              className={styles.logo}
-              priority
-            />
-          </div>
-
           <div className={`${styles.badge} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}>
             <span className={styles.badgeDot} />
             <span>{slide.badge}</span>
