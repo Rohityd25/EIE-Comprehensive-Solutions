@@ -22,7 +22,7 @@ export default function About() {
               <div className={styles.floatCard}>
                 <div className={styles.floatCardIcon}>🏆</div>
                 <div>
-                  <div className={styles.floatCardNum}>30+</div>
+                  <div className={styles.floatCardNum}>15+</div>
                   <div className={styles.floatCardLabel}>Years of Excellence</div>
                 </div>
               </div>
@@ -56,8 +56,10 @@ export default function About() {
               EIE empowers industries to achieve sustainable operations while adhering to regulatory compliance.
             </p>
             <p className={styles.desc}>
-              As the <strong>Authorized Dealer of Advance Analytik (Hungary)</strong> and Channel Partner of
-              Eco System, we bring European precision engineering to Indian industries with full local support.
+              As the <strong>Authorized Dealer of Advance Analytik (Hungary)</strong>, Channel Partner of
+              Eco System, and Channel Partner of <strong>Saaphzone Technologies</strong> (experts in robust 
+              data monitoring, acquisition, and control systems), we bring global precision engineering 
+              and cutting-edge data intelligence to Indian industries with full local support.
             </p>
 
             {/* Points */}
@@ -88,7 +90,14 @@ export default function About() {
                 className={`${styles.partnerLogoImg} advance-analytik-red`}
               />
               <span className={styles.partnerSep}>·</span>
-
+              <span className={styles.partnerLabel}>Channel Partner</span>
+              <Image
+                src="/images/Saaphzone.jpeg"
+                alt="Saaphzone Technologies"
+                width={110}
+                height={36}
+                style={{ objectFit: "contain", borderRadius: "4px" }}
+              />
             </div>
 
             <Link href="/about" className="btn btn-primary" style={{ marginTop: "2rem" }}>
