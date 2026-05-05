@@ -1,0 +1,146 @@
+/* ─── Wrapper (anchor) ───────────────────────────────────────────────────── */
+.wrapper {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 999;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* ─── Animated outer glow ring ──────────────────────────────────────────── */
+.glowRing {
+  position: absolute;
+  inset: -6px;
+  border-radius: 999px;
+  background: transparent;
+  border: 2px solid rgba(37, 211, 102, 0.45);
+  animation: ring-pulse 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes ring-pulse {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50%       { opacity: 0;   transform: scale(1.28); }
+}
+
+/* ─── Pill ───────────────────────────────────────────────────────────────── */
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 54px;
+  padding: 0 6px 0 6px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1ebe57 0%, #128c3e 100%);
+  box-shadow:
+    0 6px 24px rgba(37, 211, 102, 0.45),
+    0 2px 8px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255,255,255,0.18);
+  transition: box-shadow 0.28s ease, padding 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Glassmorphism shine line */
+.pill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.18), transparent);
+  border-radius: 999px 999px 0 0;
+  pointer-events: none;
+}
+
+.wrapper:hover .pill {
+  box-shadow:
+    0 10px 36px rgba(37, 211, 102, 0.65),
+    0 4px 14px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255,255,255,0.22);
+  padding: 0 18px 0 6px;
+}
+
+.wrapper:active .pill {
+  transform: scale(0.96);
+}
+
+/* ─── Icon container ─────────────────────────────────────────────────────── */
+.iconWrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.25s ease;
+}
+
+.wrapper:hover .iconWrap {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ─── Expanding label ────────────────────────────────────────────────────── */
+.label {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-width 0.32s ease, opacity 0.25s ease, margin 0.3s ease;
+  margin-left: 0;
+}
+
+.labelVisible {
+  max-width: 130px;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+/* ─── Live dot indicator ─────────────────────────────────────────────────── */
+.liveDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a7f3c0;
+  flex-shrink: 0;
+  margin-left: 0;
+  margin-right: 6px;
+  box-shadow: 0 0 0 0 rgba(167, 243, 192, 0.7);
+  animation: live-blink 1.8s ease-in-out infinite;
+}
+
+@keyframes live-blink {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(167, 243, 192, 0.7); }
+  50%       { box-shadow: 0 0 0 5px rgba(167, 243, 192, 0); }
+}
+
+/* ─── Mobile ─────────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .wrapper {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+  .pill {
+    height: 48px;
+    padding: 0 5px;
+  }
+  .iconWrap {
+    width: 38px;
+    height: 38px;
+  }
+  .label { display: none; }
+  .liveDot { display: none; }
+}
