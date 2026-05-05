@@ -90,14 +90,6 @@ export default function About() {
                 className={`${styles.partnerLogoImg} advance-analytik-red`}
               />
               <span className={styles.partnerSep}>·</span>
-              <span className={styles.partnerLabel}>Channel Partner</span>
-              <Image
-                src="/images/Saaphzone.jpeg"
-                alt="Saaphzone Technologies"
-                width={110}
-                height={36}
-                style={{ objectFit: "contain", borderRadius: "4px" }}
-              />
             </div>
 
             <Link href="/about" className="btn btn-primary" style={{ marginTop: "2rem" }}>

@@ -158,12 +158,6 @@ export default function AboutPage() {
             </div>
             <div className={styles.partnerCard}>
               <div className={styles.partnerBadge2}>Channel Partner</div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
-                src="/images/Saaphzone.jpeg" 
-                alt="Saaphzone Technologies" 
-                style={{ height: "48px", width: "auto", objectFit: "contain", marginBottom: "1rem", borderRadius: "6px" }} 
-              />
               <h3 className={styles.partnerName}>Saaphzone Technologies</h3>
               <p className={styles.partnerDesc}>
                 Our strategic partnership with Saaphzone Technologies enables us to provide robust data monitoring, acquisition, and control systems, ensuring cutting-edge data intelligence for regulatory compliance.
