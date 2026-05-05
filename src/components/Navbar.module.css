@@ -40,7 +40,14 @@
   gap: 2rem;
 }
 
-/* ─── Logo ─────────────────────────────────────────────────────────────── */
+/* ─── Logo Group ────────────────────────────────────────────────────────── */
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -48,10 +55,67 @@
   flex-shrink: 0;
 }
 
+.eieWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
 .logoImg {
-  height: 68px;
+  height: 52px;
   width: auto;
   object-fit: contain;
+  display: block;
+}
+
+.eieLabel {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: var(--brand-primary);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: -2px;
+}
+
+/* On hero pages the label stays green — already inherits brand color */
+
+.logoDivider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
+}
+.header:not(.heroPage) .logoDivider {
+  background: rgba(0,0,0,0.12);
+}
+
+.partnerLogoWrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Advance Analytik — shown in natural colors (logo is already red) */
+.partnerLogoRed {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* Eco System placeholder — reserved space */
+.ecoPlaceholder {
+  width: 72px;
+  height: 30px;
+  border: 1.5px dashed rgba(255,255,255,0.2);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+.header:not(.heroPage) .ecoPlaceholder {
+  border-color: rgba(0,0,0,0.12);
 }
 
 /* ─── Nav Links ─────────────────────────────────────────────────────────── */
@@ -60,6 +124,7 @@
   align-items: center;
   list-style: none;
   gap: 0.25rem;
+  margin-left: auto;
 }
 
 .navItem {

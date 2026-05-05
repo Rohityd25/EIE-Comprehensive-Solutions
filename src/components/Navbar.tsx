@@ -43,17 +43,40 @@ export default function Navbar() {
     <header className={`${styles.header} ${isHeroPage ? styles.heroPage : ""} ${scrolled ? styles.scrolled : ""}`}>
       <div className="container">
         <nav className={styles.nav}>
-          {/* Logo */}
-          <Link href="/" className={styles.logo} aria-label="EIE India Home">
-            <Image
-              src="/images/eie-logo.png"
-              alt="EIE Comprehensive Solutions"
-              width={220}
-              height={76}
-              className={styles.logoImg}
-              priority
-            />
-          </Link>
+          {/* Logo Group */}
+          <div className={styles.logoGroup}>
+            {/* EIE Logo + EIECS label */}
+            <Link href="/" className={styles.logo} aria-label="EIE India Home">
+              <div className={styles.eieWrap}>
+                <Image
+                  src="/images/eie-logo.png"
+                  alt="EIE Comprehensive Solutions"
+                  width={180}
+                  height={60}
+                  className={styles.logoImg}
+                  priority
+                />
+                <span className={styles.eieLabel}>EIECS</span>
+              </div>
+            </Link>
+
+            {/* Divider */}
+            <div className={styles.logoDivider} />
+
+            {/* Advance Analytik Logo (red tinted) */}
+            <div className={styles.partnerLogoWrap} title="Advance Analytik">
+              <Image
+                src="/images/advance-analytik-logo.png"
+                alt="Advance Analytik"
+                width={90}
+                height={32}
+                className={styles.partnerLogoRed}
+              />
+            </div>
+
+            {/* Eco System Logo — space reserved */}
+            <div className={styles.ecoPlaceholder} title="Eco System (Coming Soon)" />
+          </div>
 
           {/* Desktop Nav */}
           <ul className={styles.navLinks}>
@@ -91,7 +114,7 @@ export default function Navbar() {
           {/* CTA + Mobile Toggle */}
           <div className={styles.navActions}>
             <Link href="/contact" className="btn btn-primary btn-sm">
-              Get a Quote
+              Get a Quotation
             </Link>
             <button
               className={styles.hamburger}
@@ -131,7 +154,7 @@ export default function Navbar() {
           ))}
           <div className={styles.mobileCta}>
             <Link href="/contact" className="btn btn-primary w-full">
-              Get a Quote
+              Get a Quotation
             </Link>
           </div>
         </div>

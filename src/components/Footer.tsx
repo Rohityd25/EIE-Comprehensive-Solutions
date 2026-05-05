@@ -85,8 +85,8 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <span className={styles.footerLogoMain}>EIE</span>
-                  <span className={styles.footerLogoSub}>Comprehensive Solutions</span>
+                  <span className={styles.footerLogoMain}>EIECS</span>
+                  <span className={styles.footerLogoSub}>EIECS Comprehensive Solutions</span>
                 </div>
               </div>
               <p className={styles.footerTagline}>
@@ -165,7 +165,7 @@ export default function Footer() {
       <div className={styles.footerBottom}>
         <div className="container">
           <div className={styles.footerBottomContent}>
-            <p>© {currentYear} EIE Comprehensive Solutions. All rights reserved.</p>
+            <p>© {currentYear} EIECS Comprehensive Solutions. All rights reserved.</p>
             <p className={styles.footerBottomRight}>
              
             </p>

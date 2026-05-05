@@ -31,21 +31,21 @@ export default function ContactPage() {
        * Replace 'YOUR_WEB3FORMS_ACCESS_KEY_HERE' with a free access key from https://web3forms.com
        */
       const submissionData = {
-        access_key: "e909c310-1429-41ea-aa53-59fe53c063ec",
+        access_key: "8844c5f7-1cf4-4f06-88f3-aed68b76675a",
         ...form
       };
 
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { 
+        headers: {
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
         body: JSON.stringify(submissionData),
       });
-      
+
       const data = await res.json();
-      
+
       if (data.success) {
         setStatus("success");
         setForm({ name: "", email: "", phone: "", subject: "", message: "", service: "general" });

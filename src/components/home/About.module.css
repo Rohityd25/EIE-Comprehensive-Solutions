@@ -178,8 +178,7 @@
 .partnerLogoImg {
   height: 28px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .partnerSep {

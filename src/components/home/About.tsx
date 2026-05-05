@@ -85,7 +85,7 @@ export default function About() {
                 alt="Advance Analytik"
                 width={140}
                 height={36}
-                className={styles.partnerLogoImg}
+                className={`${styles.partnerLogoImg} advance-analytik-red`}
               />
               <span className={styles.partnerSep}>·</span>
 

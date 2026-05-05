@@ -183,7 +183,7 @@ export default function EnvironmentalMonitoringPage() {
                 alt="Advance Analytik Hungary"
                 width={300}
                 height={100}
-                className={styles.partnerLogo}
+                className={`${styles.partnerLogo} advance-analytik-red`}
               />
             </div>
           </div>

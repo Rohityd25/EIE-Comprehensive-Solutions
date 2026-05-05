@@ -10,6 +10,11 @@ const clients = [
   { name: "Talbros", logo: "/images/Talbros.png" },
   { name: "OMAXE", logo: "/images/OMAXE.png" },
   { name: "Nagar Nigam", logo: "/images/Nagar-Nigam-Mathura-Vrindavan.png" },
+  { name: "Client 34", logo: "/images/34.png" },
+  { name: "Client 35", logo: "/images/35.png" },
+  { name: "Client 38", logo: "/images/38.png" },
+  { name: "Client 39", logo: "/images/39.png" },
+  { name: "Client 40", logo: "/images/40.png" },
 ];
 
 export default function Partners() {
@@ -33,7 +38,7 @@ export default function Partners() {
                   alt="Advance Analytik Hungary"
                   width={200}
                   height={56}
-                  className={styles.opLogo}
+                  className={`${styles.opLogo} advance-analytik-red`}
                 />
               </div>
               <h3 className={styles.opName}>Advance Analytik® — Hungary</h3>
