@@ -44,23 +44,6 @@ const services = [
       "Data Logger & SCADA Integration",
     ],
   },
-  {
-    image: "/images/emission-control.jpg",
-    title: "Emission Control & Abatement",
-    href: "/services",
-    color: "#b45309",
-    description:
-      "Retrofit emission control devices, pollution abatement systems, and dual-fuel conversion for industrial and vehicular applications.",
-    capabilities: [
-      "Retrofit Emission Control Devices",
-      "Dual-Fuel System Conversion",
-      "Industrial Scrubbers",
-      "Bag Filter Systems",
-      "ESP (Electrostatic Precipitators)",
-      "VOC Abatement Systems",
-      "Compliance Auditing & Reporting",
-    ],
-  },
 ];
 
 export default function ServicesPage() {

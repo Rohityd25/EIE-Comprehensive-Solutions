@@ -23,16 +23,6 @@ const services = [
     desc: "Online effluent monitoring systems for ETPs and STPs. pH, BOD, COD, TSS, flow measurement with automatic SPCB data transmission.",
     items: ["Online Effluent Monitoring", "BOD/COD Analyzers", "Water Quality Instruments", "Flow Measurement Systems"],
   },
-  {
-    slug: "/services",
-    icon: "🏭",
-    image: "/images/emission-control.jpg",
-    title: "Emission Control Devices",
-    shortTitle: "Abatement",
-    color: "#b45309",
-    desc: "Retrofit emission control devices, scrubbers, bag filters and dual-fuel conversion systems to reduce industrial pollution.",
-    items: ["Retrofit Emission Control", "Dual-Fuel Systems", "Scrubbers & Filters", "Pollution Abatement"],
-  },
 ];
 
 export default function Services() {

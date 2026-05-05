@@ -4,7 +4,7 @@ import styles from "./about.module.css";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about EIE Comprehensive Solutions — 30+ years of environmental engineering excellence. Authorized Dealer of Advance Analytik Hungary.",
+    "Learn about EIE Comprehensive Solutions — 15+ years of environmental engineering excellence. Authorized Dealer of Advance Analytik Hungary.",
 };
 
 const milestones = [
@@ -29,13 +29,13 @@ export default function AboutPage() {
         <div className="container">
           <div className="badge badge-green" style={{ marginBottom: "1.25rem" }}>About EIE</div>
           <h1 className={styles.heroTitle}>
-            30+ Years of Environmental <br />
+            15+ Years of Environmental <br />
             Engineering Excellence
           </h1>
           <p className={styles.heroSubtitle}>
             EIE Comprehensive Solutions has been at the forefront of environmental monitoring
             and engineering, helping industries across India achieve sustainable operations
-            and regulatory compliance for over three decades.
+            and regulatory compliance for over 15 years.
           </p>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function AboutPage() {
             <div className="divider" />
           </div>
           <div className={styles.partnersGrid}>
-            <div className={styles.partnerCardFull}>
+            <div className={styles.partnerCard}>
               <div className={styles.partnerBadge}>Authorized Dealer</div>
               <h3 className={styles.partnerName}>Advance Analytik® — Hungary</h3>
               <p className={styles.partnerDesc}>
@@ -154,6 +154,19 @@ export default function AboutPage() {
               <p className={styles.partnerDesc}>
                 As a Channel Partner of Eco System, we extend our service portfolio
                 with integrated environmental management solutions.
+              </p>
+            </div>
+            <div className={styles.partnerCard}>
+              <div className={styles.partnerBadge2}>Channel Partner</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src="/images/Saaphzone.jpeg" 
+                alt="Saaphzone Technologies" 
+                style={{ height: "48px", width: "auto", objectFit: "contain", marginBottom: "1rem", borderRadius: "6px" }} 
+              />
+              <h3 className={styles.partnerName}>Saaphzone Technologies</h3>
+              <p className={styles.partnerDesc}>
+                Our strategic partnership with Saaphzone Technologies enables us to provide robust data monitoring, acquisition, and control systems, ensuring cutting-edge data intelligence for regulatory compliance.
               </p>
             </div>
           </div>
