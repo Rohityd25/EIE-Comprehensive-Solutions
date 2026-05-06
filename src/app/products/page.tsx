@@ -24,7 +24,7 @@ const products = [
     category: "air",
     brand: "Advance Analytik",
     icon: "🌡️",
-    image: null,
+    image: "/images/Air-quality-device.png",
     description: "Multi-gas ambient air quality monitoring station for SO₂, NO₂, CO, O₃, H₂S. DOAS technology with CPCB approval.",
     features: ["SO₂, NO₂, CO, O₃, H₂S", "Differential Optical Absorption", "CPCB Protocol ready", "Remote data transmission"],
     tag: "CPCB Approved",
@@ -38,7 +38,7 @@ const products = [
     category: "emission",
     brand: "Advance Analytik",
     icon: "🏭",
-    image: null,
+    image: "/images/Air-quality-device.png",
     description: "Continuous Emission Monitoring System for stack gases. Extractive measurement of SO₂, NOx, CO, CO₂, HCl, HF.",
     features: ["SO₂, NOx, CO, CO₂, HCl", "In-situ & extractive", "MoEF/CPCB compliant", "DAS & reporting software"],
     tag: "MoEF Compliant",
@@ -52,7 +52,7 @@ const products = [
     category: "emission",
     brand: "Advance Analytik",
     icon: "💨",
-    image: null,
+    image: "/images/Air-quality-device.png",
     description: "Optical dust/opacity monitor for stack emissions. Laser-based measurement with temperature compensation and stainless housing.",
     features: ["0–2000 mg/m³ range", "Laser optical sensor", "Temperature compensated", "4-20mA RS-485 output"],
     tag: "Stack Monitoring",
@@ -66,7 +66,7 @@ const products = [
     category: "air",
     brand: "Advance Analytik",
     icon: "📡",
-    image: null,
+    image: "/images/Air-quality-device.png",
     description: "Compact IoT-based air quality sensor network for hyperlocal monitoring of PM, gases, temperature and humidity.",
     features: ["PM₁, PM₂.₅, PM₁₀, PM₄", "NO₂, O₃, CO, SO₂", "GSM/WiFi/LoRa options", "Cloud data platform"],
     tag: "IoT Sensor",
@@ -80,7 +80,7 @@ const products = [
     category: "water",
     brand: "Advance Analytik",
     icon: "💧",
-    image: null,
+    image: "/images/water-treatment.jpg",
     description: "8-parameter online water quality analyzer for pH, DOx, Conductivity, Turbidity, ORP, Chlorine, Nitrate, and Temperature.",
     features: ["8 simultaneous parameters", "pH, DOx, Cond, Turbidity", "ORP, Cl₂, NO₃⁻, Temp", "IP-68 submersible probe"],
     tag: "Water Quality",
@@ -94,7 +94,7 @@ const products = [
     category: "water",
     brand: "EIE / Advance Analytik",
     icon: "🔬",
-    image: null,
+    image: "/images/water-treatment.jpg",
     description: "SPCB-compliant online effluent monitoring system for ETPs. Measures pH, BOD, COD, TSS, Flow with automatic data transmission.",
     features: ["pH, BOD, COD, TSS", "Flow rate measurement", "SPCB server connectivity", "24/7 monitoring & alerts"],
     tag: "SPCB Approved",
@@ -108,7 +108,7 @@ const products = [
     category: "air",
     brand: "Advance Analytik",
     icon: "🌦️",
-    image: null,
+    image: "/images/Air-quality-device.png",
     description: "Complete automatic weather station with ultrasonic wind sensor, solar radiation, rain gauge, pressure and humidity.",
     features: ["Ultrasonic wind sensor", "Solar radiation pyranometer", "Tipping bucket rain gauge", "Barometric pressure sensor"],
     tag: "Meteorological",
@@ -122,7 +122,7 @@ const products = [
     category: "noise",
     brand: "Advance Analytik",
     icon: "🔊",
-    image: null,
+    image: "/images/Air-quality-device.png",
     description: "IEC Class 1 sound level meter for environmental noise measurement and monitoring near industrial facilities.",
     features: ["IEC 61672 Class 1", "dB(A), dB(C), dB(Z)", "Leq, Lmax, Lmin, L10", "Data logger 8GB SD card"],
     tag: "Type 1 Certified",
@@ -136,7 +136,7 @@ const products = [
     category: "air",
     brand: "Advance Analytik",
     icon: "🔭",
-    image: null,
+    image: "/images/Air-quality-device.png",
     description: "Open-path DOAS analyzer for long-path measurement of SO₂, NO₂, BTX, NH₃ and other gases over distances up to 500m.",
     features: ["Path length 10–500m", "SO₂, NO₂, BTX, NH₃", "No sampling system needed", "Fence-line monitoring ready"],
     tag: "Open Path",
@@ -184,58 +184,60 @@ export default function ProductsPage() {
           <div className={styles.productGrid}>
             {products.map((product) => (
               <div key={product.id} className={styles.productCard}>
-                <div className={styles.productTop}>
-                  <div className={styles.productIcon}>{product.icon}</div>
-                  <span
-                    className={styles.productTag}
-                    style={{ background: `${product.tagColor}18`, color: product.tagColor, border: `1px solid ${product.tagColor}30` }}
-                  >
+                <div className={styles.productVisual}>
+                  {product.image && (
+                    <Image src={product.image} alt={product.name} fill className={styles.productImg} />
+                  )}
+                  <div className={styles.imageOverlay} />
+                  <div className={styles.productBadge}>
+                    <span className={styles.productIcon}>{product.icon}</span>
                     {product.tag}
-                  </span>
+                  </div>
                 </div>
 
-                <div className={styles.productBrand}>{product.brand}</div>
-                <h3 className={styles.productName}>{product.name}</h3>
-                <p className={styles.productShort}>{product.shortName}</p>
-                <p className={styles.productDesc}>{product.description}</p>
+                <div className={styles.productContent}>
+                  <div className={styles.productBrand}>{product.brand}</div>
+                  <h3 className={styles.productName}>{product.name}</h3>
+                  <p className={styles.productShort}>{product.shortName}</p>
+                  <p className={styles.productDesc}>{product.description}</p>
 
-                <ul className={styles.productFeatures}>
-                  {product.features.map((f) => (
-                    <li key={f}>
-                      <span className={styles.featureDot} />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
+                  <ul className={styles.productFeatures}>
+                    {product.features.map((f) => (
+                      <li key={f} className={styles.featureItem}>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ color: product.tagColor }}>
+                          <path d="M3 8l3.5 3.5L13 4" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
 
-                <div className={styles.productCtaGroup}>
-                  {product.catalogue ? (
-                    <a
-                      href={product.catalogue}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.productCtaPrimary}
-                    >
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <polyline points="14,2 14,8 20,8"/>
-                        <line x1="12" y1="18" x2="12" y2="12"/>
-                        <polyline points="9,15 12,18 15,15"/>
-                      </svg>
-                      Download Catalogue
-                    </a>
-                  ) : (
-                    <span className={styles.productCtaDisabled}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <polyline points="14,2 14,8 20,8"/>
-                      </svg>
-                      Catalogue Coming Soon
-                    </span>
-                  )}
-                  <Link href="/contact" className={styles.productCtaSecondary}>
-                    Request Quote →
-                  </Link>
+                  <div className={styles.productCtaGroup}>
+                    {product.catalogue ? (
+                      <a
+                        href={product.catalogue}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.productCtaPrimary}
+                      >
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                          <polyline points="14,2 14,8 20,8"/>
+                          <line x1="12" y1="18" x2="12" y2="12"/>
+                          <polyline points="9,15 12,18 15,15"/>
+                        </svg>
+                        Download Brochure
+                      </a>
+                    ) : (
+                      <span className={styles.productCtaDisabled}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                          <polyline points="14,2 14,8 20,8"/>
+                        </svg>
+                        Brochure Coming Soon
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
