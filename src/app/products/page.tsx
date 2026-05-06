@@ -182,7 +182,7 @@ export default function ProductsPage() {
           </div>
 
           <div className={styles.productGrid}>
-            {products.map((product) => (
+            {products.map((product, index) => (
               <div key={product.id} className={styles.productCard}>
                 <div className={styles.productVisual}>
                   {product.image && (
@@ -192,6 +192,7 @@ export default function ProductsPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       quality={75}
+                      priority={index < 3}
                       className={styles.productImg}
                     />
                   )}
