@@ -19,17 +19,23 @@ const categories = [
 const products = [
   {
     id: 1,
-    name: "OPSIS AR-500 Series",
-    shortName: "Ambient Air Monitor",
-    category: "air",
+    name: "OPTICS-1000 Multi Parameter",
+    shortName: "Water Quality Analyser",
+    category: "water",
     brand: "Advance Analytik",
-    icon: "🌡️",
-    image: "/images/Air-quality-device.png",
-    description: "Multi-gas ambient air quality monitoring station for SO₂, NO₂, CO, O₃, H₂S. DOAS technology with CPCB approval.",
-    features: ["SO₂, NO₂, CO, O₃, H₂S", "Differential Optical Absorption", "CPCB Protocol ready", "Remote data transmission"],
-    tag: "CPCB Approved",
-    tagColor: "#16a34a",
-    catalogue: "/catalogues/opsis-ar500.pdf",
+    icon: "💧",
+    image: "/images/water-treatment.jpg",
+    description: "High-performance online water analyser for up to 7 parameters (COD, BOD, TSS, pH, etc.). Features state-of-the-art optical technology for exceptional stability in wastewater treatment.",
+    features: [
+      "Simultaneous measurement of 7 parameters",
+      "High-resolution optics (180-750nm)",
+      "Auto-cleaning & long-lasting lamps",
+      "Modular design for external probes",
+      "Large intuitive touch screen"
+    ],
+    tag: "Water Quality",
+    tagColor: "#0891b2",
+    catalogue: "/catalogues/optics-1000.pdf",
   },
   {
     id: 2,
@@ -221,18 +227,18 @@ export default function ProductsPage() {
                         className={styles.productCtaPrimary}
                       >
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                          <polyline points="14,2 14,8 20,8"/>
-                          <line x1="12" y1="18" x2="12" y2="12"/>
-                          <polyline points="9,15 12,18 15,15"/>
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                          <polyline points="14,2 14,8 20,8" />
+                          <line x1="12" y1="18" x2="12" y2="12" />
+                          <polyline points="9,15 12,18 15,15" />
                         </svg>
                         Download Brochure
                       </a>
                     ) : (
                       <span className={styles.productCtaDisabled}>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                          <polyline points="14,2 14,8 20,8"/>
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                          <polyline points="14,2 14,8 20,8" />
                         </svg>
                         Brochure Coming Soon
                       </span>
