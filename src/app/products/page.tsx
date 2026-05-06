@@ -48,7 +48,7 @@ const products = [
   {
     id: 3,
     name: "Gaz CEMS",
-    shortName: "Online Gas Analyzer",
+    shortName: "Gas Analyzer",
     category: "emission",
     brand: "Advance Analytik",
     icon: "🏭",
@@ -62,7 +62,7 @@ const products = [
   {
     id: 4,
     name: "Gaz-SPM Dust Analyser",
-    shortName: "Online Dust Monitor",
+    shortName: "Dust Monitor",
     category: "emission",
     brand: "Advance Analytik",
     icon: "💨",
@@ -182,7 +182,7 @@ export default function ProductsPage() {
           </div>
 
           <div className={styles.productGrid}>
-            {products.map((product, index) => (
+            {products.map((product) => (
               <div key={product.id} className={styles.productCard}>
                 <div className={styles.productVisual}>
                   {product.image && (
@@ -192,7 +192,6 @@ export default function ProductsPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       quality={75}
-                      priority={index < 3}
                       className={styles.productImg}
                     />
                   )}
