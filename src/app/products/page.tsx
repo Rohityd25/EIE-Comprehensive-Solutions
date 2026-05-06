@@ -24,7 +24,7 @@ const products = [
     category: "water",
     brand: "Advance Analytik",
     icon: "💧",
-    image: "/images/water-treatment.jpg",
+    image: "/images/optics-1000.png",
     description: "High-performance online water analyser for up to 7 parameters (COD, BOD, TSS, pH, etc.). Features state-of-the-art optical technology for exceptional stability in wastewater treatment.",
     features: [
       "Simultaneous measurement of 7 parameters",
@@ -35,7 +35,7 @@ const products = [
     ],
     tag: "Water Quality",
     tagColor: "#0891b2",
-    catalogue: "/catalogues/optics-1000.pdf",
+    catalogue: "/catalogues/OPTICS-1000.pdf",
   },
   {
     id: 2,
