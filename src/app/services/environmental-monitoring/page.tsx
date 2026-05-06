@@ -85,7 +85,7 @@ export default function EnvironmentalMonitoringPage() {
           <div className={styles.introGrid}>
             <div className={styles.introImage}>
               <Image
-                src="/images/air-quality-device.jpg"
+                src="/images/Air-quality-device.png"
                 alt="Air Quality Monitoring Station"
                 width={600}
                 height={420}

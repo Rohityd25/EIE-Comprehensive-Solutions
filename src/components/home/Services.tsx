@@ -6,7 +6,7 @@ const services = [
   {
     slug: "environmental-monitoring",
     icon: "🌫️",
-    image: "/images/air-quality-device.jpg",
+    image: "/images/Air-quality-device.png",
     title: "Environmental Monitoring",
     shortTitle: "Air Quality",
     color: "#16a34a",
