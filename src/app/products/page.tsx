@@ -33,40 +33,28 @@ const products = [
   },
   {
     id: 2,
-    name: "Gaz-AQMS (AAQMS)",
+    name: "Gaz-AQMS (Ambient Air Quality Monitoring System)",
     shortName: "Ambient Air Monitor",
     category: "air",
     brand: "Advance Analytik",
     icon: "🌬️",
     image: "/images/AAQMS.png",
-    description: "Standard AAQMS station for monitoring PM10, PM2.5, SO₂, NO₂, O₃, and CO. Employs advanced detection methods (UV photometry, chemiluminescence, beta-ray) for highly accurate measurement.",
-    features: [
-      "Continuous real-time measurement of PM & gases",
-      "Ultra-low detection limit (≤ 5 µg/m³)",
-      "Built-in dynamic calibrator & zero air generator",
-      "Precise particle size measurement cutter",
-      "Reliable under diverse environmental conditions"
-    ],
-    tag: "CPCB Compliant",
-    tagColor: "#16a34a",
+    description: "Standard AAQMS station for monitoring PM10, PM2.5, SO₂, NO₂, O₃, CO using UV photometry and chemiluminescence technologies.",
+    features: ["Measures PM10, PM2.5 & trace gases", "Low detection limit of ≤ 5 µg/m³", "Real-time online measurement", "Dynamic calibrator & zero air generator"],
+    tag: "Environmental Standards",
+    tagColor: "#1e40af",
     catalogue: "/catalogues/AAQMS.pdf",
   },
   {
     id: 3,
     name: "Gaz CEMS",
-    shortName: "Stack Emission Monitor",
+    shortName: "Online Gas Analyzer",
     category: "emission",
     brand: "Advance Analytik",
     icon: "🏭",
     image: "/images/CEMS.png",
-    description: "Advanced online gas analyzer using UV DOAS technology. Delivers accurate, continuous monitoring of multiple stack gases (SOx, NOx, CO, CO₂, O₂) even in harsh environments.",
-    features: [
-      "Simultaneous multi-gas measurement",
-      "UV DOAS tech for low cross-interference",
-      "Fully automated sampling & calibration",
-      "Intelligent real-time data management",
-      "Low maintenance with remote monitoring"
-    ],
+    description: "Advanced online gas analyzer using DOAS technology to simultaneously measure SOx, NOx, CO, CO₂, O₂ in harsh conditions.",
+    features: ["Measures SOx, NOx, CO, CO₂, O₂", "Low cross-interference with DOAS", "Fully automated testing & calibration", "Minimal maintenance in harsh conditions"],
     tag: "Stack Monitoring",
     tagColor: "#b45309",
     catalogue: "/catalogues/CEMS.pdf",
@@ -198,13 +186,13 @@ export default function ProductsPage() {
               <div key={product.id} className={styles.productCard}>
                 <div className={styles.productVisual}>
                   {product.image && (
-                    <Image 
-                      src={product.image} 
-                      alt={product.name} 
-                      fill 
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       quality={75}
-                      className={styles.productImg} 
+                      className={styles.productImg}
                     />
                   )}
                   <div className={styles.imageOverlay} />
