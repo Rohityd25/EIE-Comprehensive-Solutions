@@ -47,8 +47,9 @@ export default function Services() {
                 <Image
                   src={svc.image}
                   alt={svc.title}
-                  width={480}
-                  height={240}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 480px"
+                  quality={75}
                   className={styles.img}
                 />
                 <div className={styles.imageOverlay} />

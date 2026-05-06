@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Hero.module.css";
 
 const slides = [
@@ -68,9 +69,18 @@ export default function Hero() {
         <div
           key={s.id}
           className={`${styles.slideBg} ${i === current ? styles.slideActive : ""}`}
-          style={{ backgroundImage: `url(${s.image})` }}
           aria-hidden="true"
-        />
+        >
+          <Image 
+            src={s.image} 
+            alt="Hero background" 
+            fill 
+            sizes="100vw" 
+            priority={i === 0} 
+            quality={75} 
+            style={{ objectFit: 'cover' }} 
+          />
+        </div>
       ))}
 
       {/* Dark overlay */}

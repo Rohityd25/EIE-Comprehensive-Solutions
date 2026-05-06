@@ -20,41 +20,29 @@ const products = [
   {
     id: 1,
     name: "OPTICS-1000 Multi Parameter",
-    shortName: "Water Quality Analyser",
-    category: "water",
+    shortName: "Ambient Air Monitor",
+    category: "air",
     brand: "Advance Analytik",
-    icon: "💧",
+    icon: "🌡️",
     image: "/images/optics-1000.png",
-    description: "High-performance online water analyser for up to 7 parameters (COD, BOD, TSS, pH, etc.). Features state-of-the-art optical technology for exceptional stability in wastewater treatment.",
-    features: [
-      "Simultaneous measurement of 7 parameters",
-      "High-resolution optics (180-750nm)",
-      "Auto-cleaning & long-lasting lamps",
-      "Modular design for external probes",
-      "Large intuitive touch screen"
-    ],
-    tag: "Water Quality",
-    tagColor: "#0891b2",
+    description: "Multi-gas ambient air quality monitoring station for SO₂, NO₂, CO, O₃, H₂S. DOAS technology with CPCB approval.",
+    features: ["SO₂, NO₂, CO, O₃, H₂S", "Differential Optical Absorption", "CPCB Protocol ready", "Remote data transmission"],
+    tag: "CPCB Approved",
+    tagColor: "#16a34a",
     catalogue: "/catalogues/OPTICS-1000.pdf",
   },
   {
     id: 2,
-    name: "Gaz-AQMS (AAQMS)",
-    shortName: "Ambient Air Monitor",
-    category: "air",
+    name: "Ambient Air Quality Monitoring System (AAQMS)",
+    shortName: "Stack Emission Monitor",
+    category: "emission",
     brand: "Advance Analytik",
-    icon: "🌬️",
+    icon: "🏭",
     image: "/images/AAQMS.png",
-    description: "Standard AAQMS station for monitoring PM10, PM2.5, SO₂, NO₂, O₃, and CO. Employs advanced detection methods (UV photometry, chemiluminescence, beta-ray) for highly accurate measurement.",
-    features: [
-      "Continuous real-time measurement of PM & gases",
-      "Ultra-low detection limit (≤ 5 µg/m³)",
-      "Built-in dynamic calibrator & zero air generator",
-      "Precise particle size measurement cutter",
-      "Reliable under diverse environmental conditions"
-    ],
-    tag: "CPCB Compliant",
-    tagColor: "#16a34a",
+    description: "Continuous Emission Monitoring System for stack gases. Extractive measurement of SO₂, NOx, CO, CO₂, HCl, HF.",
+    features: ["SO₂, NOx, CO, CO₂, HCl", "In-situ & extractive", "MoEF/CPCB compliant", "DAS & reporting software"],
+    tag: "MoEF Compliant",
+    tagColor: "#1e40af",
     catalogue: "/catalogues/AAQMS.pdf",
   },
   {
@@ -198,7 +186,14 @@ export default function ProductsPage() {
               <div key={product.id} className={styles.productCard}>
                 <div className={styles.productVisual}>
                   {product.image && (
-                    <Image src={product.image} alt={product.name} fill className={styles.productImg} />
+                    <Image 
+                      src={product.image} 
+                      alt={product.name} 
+                      fill 
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={75}
+                      className={styles.productImg} 
+                    />
                   )}
                   <div className={styles.imageOverlay} />
                   <div className={styles.productBadge}>
