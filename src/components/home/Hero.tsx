@@ -16,7 +16,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/images/air-quality-station.jpg",
+    image: "/images/air-quality-device.jpg",
     badge: "CPCB & SPCB Compliant Systems",
     title: "Real-Time",
     highlight: "Air Quality",

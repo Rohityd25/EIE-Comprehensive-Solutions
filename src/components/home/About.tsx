@@ -30,7 +30,7 @@ export default function About() {
             {/* Second image */}
             <div className={styles.secondImgWrap}>
               <Image
-                src="/images/air-quality-station.jpg"
+                src="/images/air-quality-device.jpg"
                 alt="Air Quality Monitoring Station"
                 width={240}
                 height={200}

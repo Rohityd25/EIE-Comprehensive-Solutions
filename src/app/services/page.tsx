@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    image: "/images/air-quality-station.jpg",
+    image: "/images/air-quality-device.jpg",
     title: "Environmental Monitoring",
     href: "/services/environmental-monitoring",
     color: "#16a34a",
