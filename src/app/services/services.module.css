@@ -115,3 +115,11 @@
   .serviceBlockReverse .serviceContent { order: 2; }
   .serviceVisual { height: 260px; }
 }
+
+@media (max-width: 640px) {
+  .hero { padding: 6rem 0 3rem; }
+  .serviceBlock { padding: 2rem 0; gap: 1.5rem; }
+  .serviceVisual { height: 200px; }
+  .serviceTitle { font-size: 1.5rem; }
+  .section { padding: 2rem 0 4rem; }
+}

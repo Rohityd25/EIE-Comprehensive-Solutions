@@ -112,5 +112,7 @@
 
 @media (max-width: 640px) {
   .grid { grid-template-columns: 1fr; }
-  .imgWrap { height: 240px; }
+  .imgWrap { height: 200px; }
+  .content { padding: 1.25rem; }
+  .section { padding: 4rem 0; }
 }

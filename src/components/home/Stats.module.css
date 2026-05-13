@@ -158,7 +158,7 @@
 }
 
 @media (max-width: 640px) {
-  .statsGrid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .statsGrid { grid-template-columns: 1fr; gap: 1rem; }
   .statCard { padding: 1.5rem 1rem; }
   .statNumber { font-size: 2rem; }
   .statSuffix { font-size: 1.2rem; }

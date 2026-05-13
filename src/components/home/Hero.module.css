@@ -177,9 +177,14 @@
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .hero { padding-top: 6rem; }
-  .heroContent { padding-bottom: 10rem; }
+  .heroContent { padding-bottom: 6rem; }
 }
 
 @media (max-width: 480px) {
-  .heroCta { flex-direction: column; }
+  .hero { padding-top: 5rem; min-height: calc(100vh - 60px); }
+  .heroContent { padding-bottom: 4rem; }
+  .heroTitle { font-size: 2.2rem; }
+  .heroSubLine { font-size: 1.4rem; }
+  .heroCta { flex-direction: column; width: 100%; }
+  .heroCta a { width: 100%; text-align: center; justify-content: center; }
 }

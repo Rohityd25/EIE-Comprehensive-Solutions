@@ -218,6 +218,14 @@
 
 @media (max-width: 768px) {
   .storyTimeline::before { left: 40px; }
-  .timelineItem { flex-direction: row !important; }
+  .timelineItem { flex-direction: row !important; gap: 1rem; }
   .timelineRight { flex-direction: row !important; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 6rem 0 3rem; }
+  .mvCard { padding: 1.5rem; }
+  .timelineYear { min-width: 60px; font-size: 1rem; }
+  .timelineContent { padding: 1rem; }
+  .partnerCardFull, .partnerCard { padding: 1.5rem; }
 }
