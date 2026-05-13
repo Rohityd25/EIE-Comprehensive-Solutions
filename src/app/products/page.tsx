@@ -113,7 +113,7 @@ const products = [
     features: ["360° pan, 90° tilt", "High optical zoom", "Weatherproof housing", "Real-time remote viewing"],
     tag: "Visual Monitoring",
     tagColor: "#0284c7",
-    catalogue: "/catalogues/aws-pro.pdf",
+    catalogue: "/catalogues/PTZ-Camera-Manual.pdf",
   },
   {
     id: 8,
@@ -186,14 +186,15 @@ export default function ProductsPage() {
               <div key={product.id} className={styles.productCard}>
                 <div className={styles.productVisual}>
                   {product.image && (
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      quality={75}
-                      className={styles.productImg}
-                    />
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        quality={75}
+                        priority={product.id <= 3}
+                        className={styles.productImg}
+                      />
                   )}
                   <div className={styles.imageOverlay} />
                   <div className={styles.productBadge}>
