@@ -339,7 +339,7 @@
 @media (max-width: 900px) {
   .navLinks { display: none; }
   .hamburger { display: flex; }
-  .navActions .btn { display: none; }
+  .navActions :global(.btn) { display: none; }
 }
 
 @media (max-width: 600px) {
