@@ -65,14 +65,6 @@ export default function Partners() {
               <p className={styles.opDesc}>
                 Extended service portfolio through our channel partnership with Eco System solutions.
               </p>
-              <a
-                href="https://www.enggenv.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.opLink}
-              >
-                Learn More →
-              </a>
             </div>
           </div>
         </div>
