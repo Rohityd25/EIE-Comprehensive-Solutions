@@ -30,20 +30,7 @@ const instruments = [
     desc: "Automated BOD and COD measurement systems for effluent treatment plant process control and regulatory compliance reporting.",
     specs: ["5-day BOD measurement", "COD digestion method", "Automated sampling", "0–5000 mg/L range", "Color touchscreen display"],
   },
-  {
-    name: "Turbidity & TSS Monitor",
-    category: "Solids",
-    icon: "🌊",
-    desc: "Online turbidity and Total Suspended Solids monitors for water and wastewater treatment plants using optical measurement.",
-    specs: ["0–4000 NTU turbidity range", "0–2000 mg/L TSS range", "Nephelometric method", "4-20mA current output", "Self-cleaning sensor"],
-  },
-  {
-    name: "Heavy Metal Analyzer",
-    category: "Heavy Metals",
-    icon: "⚗️",
-    desc: "Detection of heavy metals including Lead, Chromium, Arsenic, Mercury in industrial effluents and water bodies.",
-    specs: ["As, Pb, Cr, Hg, Cd detection", "ppb level detection", "ICP-OES method", "Automated calibration", "LIMS compatible"],
-  },
+
   {
     name: "Flow Measurement System",
     category: "Flow",
