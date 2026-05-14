@@ -74,8 +74,15 @@ export default function Navbar() {
               />
             </div>
 
-            {/* Eco System Logo — space reserved */}
-            <div className={styles.ecoPlaceholder} title="Eco System (Coming Soon)" />
+            {/* Eco System Logo */}
+            <Image
+              src="/images/eco-system.jpeg"
+              alt="Eco System"
+              width={70}
+              height={32}
+              className={styles.partnerLogoRed}
+              style={{ objectFit: "contain", mixBlendMode: "multiply" }}
+            />
           </div>
 
           {/* Desktop Nav */}

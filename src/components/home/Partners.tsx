@@ -58,8 +58,15 @@ export default function Partners() {
             {/* Eco System */}
             <div className={styles.opCard}>
               <div className={styles.opBadge2}>Channel Partner</div>
-              <div className={styles.opLogoWrap} style={{ padding: "1.5rem 0" }}>
-                <div className={styles.opLogoFallback}>🌿 Eco System</div>
+              <div className={styles.opLogoWrap}>
+                <Image
+                  src="/images/eco-system.jpeg"
+                  alt="Eco System Logo"
+                  width={160}
+                  height={56}
+                  className={styles.opLogo}
+                  style={{ objectFit: "contain" }}
+                />
               </div>
               <h3 className={styles.opName}>Eco System</h3>
               <p className={styles.opDesc}>

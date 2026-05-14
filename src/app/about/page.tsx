@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 const milestones = [
   { year: "2018", title: "Founded", desc: "EIE Comprehensive Solutions established in New Delhi" },
-  { year: "2020", title: "100 Clients", desc: "Reached 100 satisfied clients milestone across India" },
   { year: "2021", title: "Partnership", desc: "Became Authorized Dealer of Advance Analytik, Hungary" },
   { year: "2023", title: "300+ Sites", desc: "Monitoring 300+ active environmental sites nationwide" },
   { year: "2024", title: "Digital Leap", desc: "Launched modern digital platform for seamless service delivery" },
+  { year: "2026", title: "700+ Clients", desc: "Reached 700+ satisfied clients milestone across India" },
 ];
 
 const team = [
