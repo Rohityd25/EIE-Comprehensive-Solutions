@@ -150,6 +150,14 @@ export default function AboutPage() {
             </div>
             <div className={styles.partnerCard}>
               <div className={styles.partnerBadge2}>Channel Partner</div>
+              <h3 className={styles.partnerName}>Eco System</h3>
+              <p className={styles.partnerDesc}>
+                As a Channel Partner of Eco System, we extend our service portfolio
+                with integrated environmental management solutions.
+              </p>
+            </div>
+            <div className={styles.partnerCard}>
+              <div className={styles.partnerBadge2}>Channel Partner</div>
               <h3 className={styles.partnerName}>Saaphzone Technologies</h3>
               <p className={styles.partnerDesc}>
                 Our strategic partnership with Saaphzone Technologies enables us to provide robust data monitoring, acquisition, and control systems, ensuring cutting-edge data intelligence for regulatory compliance.
