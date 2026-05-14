@@ -78,7 +78,7 @@ export default function Partners() {
             <h2>Our Valued Clients</h2>
             <div className="divider" />
             <p style={{ marginTop: "1rem" }}>
-              Trusted by 200+ industry leaders across automotive, pharmaceutical,
+              Trusted by 700+ industry leaders across automotive, pharmaceutical,
               real estate, hospitality, and government sectors.
             </p>
           </div>

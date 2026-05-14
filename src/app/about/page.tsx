@@ -4,14 +4,14 @@ import styles from "./about.module.css";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about EIE Comprehensive Solutions — 15+ years of environmental engineering excellence. Authorized Dealer of Advance Analytik Hungary.",
+    "Learn about EIE Comprehensive Solutions — 8+ years of environmental engineering excellence. Authorized Dealer of Advance Analytik Hungary.",
 };
 
 const milestones = [
-  { year: "1995", title: "Founded", desc: "EIE Comprehensive Solutions established in New Delhi" },
-  { year: "2005", title: "100 Clients", desc: "Reached 100 satisfied clients milestone across India" },
-  { year: "2012", title: "Partnership", desc: "Became Authorized Dealer of Advance Analytik, Hungary" },
-  { year: "2020", title: "300+ Sites", desc: "Monitoring 300+ active environmental sites nationwide" },
+  { year: "2018", title: "Founded", desc: "EIE Comprehensive Solutions established in New Delhi" },
+  { year: "2020", title: "100 Clients", desc: "Reached 100 satisfied clients milestone across India" },
+  { year: "2021", title: "Partnership", desc: "Became Authorized Dealer of Advance Analytik, Hungary" },
+  { year: "2023", title: "300+ Sites", desc: "Monitoring 300+ active environmental sites nationwide" },
   { year: "2024", title: "Digital Leap", desc: "Launched modern digital platform for seamless service delivery" },
 ];
 
@@ -29,13 +29,13 @@ export default function AboutPage() {
         <div className="container">
           <div className="badge badge-green" style={{ marginBottom: "1.25rem" }}>About EIE</div>
           <h1 className={styles.heroTitle}>
-            15+ Years of Environmental <br />
+            8+ Years of Environmental <br />
             Engineering Excellence
           </h1>
           <p className={styles.heroSubtitle}>
             EIE Comprehensive Solutions has been at the forefront of environmental monitoring
             and engineering, helping industries across India achieve sustainable operations
-            and regulatory compliance for over 15 years.
+            and regulatory compliance since our inception.
           </p>
         </div>
       </section>
@@ -113,7 +113,7 @@ export default function AboutPage() {
           <div className={styles.clientsNote}>
             <p>
               Our trusted clients include <strong>Mercedes-Benz, Berger Paints, DS Group, Gaur City, Yakult India,
-              Venkateshwar Hospital</strong>, and 200+ other industry leaders who rely on us for their
+              Venkateshwar Hospital</strong>, and 700+ other industry leaders who rely on us for their
               environmental compliance needs.
             </p>
           </div>
@@ -147,14 +147,6 @@ export default function AboutPage() {
               >
                 Visit Partner Website
               </a>
-            </div>
-            <div className={styles.partnerCard}>
-              <div className={styles.partnerBadge2}>Channel Partner</div>
-              <h3 className={styles.partnerName}>Eco System</h3>
-              <p className={styles.partnerDesc}>
-                As a Channel Partner of Eco System, we extend our service portfolio
-                with integrated environmental management solutions.
-              </p>
             </div>
             <div className={styles.partnerCard}>
               <div className={styles.partnerBadge2}>Channel Partner</div>

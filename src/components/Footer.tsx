@@ -148,17 +148,13 @@ export default function Footer() {
                 </div>
                 <div className={styles.partnerBadge}>
                   <span className={styles.partnerBadgeLabel}>Channel Partner</span>
-                  <span className={styles.partnerBadgeName}>Eco System</span>
-                </div>
-                <div className={styles.partnerBadge}>
-                  <span className={styles.partnerBadgeLabel}>Channel Partner</span>
                   <span className={styles.partnerBadgeName}>Saaphzone Technologies</span>
                 </div>
               </div>
               <div className={styles.footerCertification}>
-                <span>🏆 15+ Years of Experience</span>
+                <span>🏆 8+ Years of Experience</span>
                 <span>✅ 700+ Sites Monitored</span>
-                <span>⭐ 500+ Happy Clients</span>
+                <span>⭐ 700+ Happy Clients</span>
               </div>
             </div>
           </div>
