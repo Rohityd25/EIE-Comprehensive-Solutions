@@ -78,8 +78,8 @@ export default function Navbar() {
             <Image
               src="/images/eco-system-new.png"
               alt="Eco System"
-              width={90}
-              height={44}
+              width={160}
+              height={75}
               className={styles.ecoLogo}
               style={{ objectFit: "contain", mixBlendMode: "multiply" }}
             />

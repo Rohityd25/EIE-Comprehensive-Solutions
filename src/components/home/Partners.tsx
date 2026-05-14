@@ -62,8 +62,8 @@ export default function Partners() {
                 <Image
                   src="/images/eco-system-new.png"
                   alt="Eco System Logo"
-                  width={160}
-                  height={56}
+                  width={200}
+                  height={80}
                   className={styles.opLogo}
                   style={{ objectFit: "contain" }}
                 />
