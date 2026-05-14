@@ -60,7 +60,7 @@ export default function Partners() {
               <div className={styles.opBadge2}>Channel Partner</div>
               <div className={styles.opLogoWrap}>
                 <Image
-                  src="/images/eco-system.jpeg"
+                  src="/images/eco-system-new.png"
                   alt="Eco System Logo"
                   width={160}
                   height={56}
@@ -70,7 +70,7 @@ export default function Partners() {
               </div>
               <h3 className={styles.opName}>Eco System</h3>
               <p className={styles.opDesc}>
-                Extended service portfolio through our channel partnership with Eco System solutions.
+                Extended service portfolio through our channel partnership with Eco System.
               </p>
             </div>
           </div>
