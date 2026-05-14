@@ -81,7 +81,7 @@ export default function Navbar() {
               width={160}
               height={75}
               className={styles.ecoLogo}
-              style={{ objectFit: "contain", mixBlendMode: "multiply" }}
+              style={{ objectFit: "contain" }}
             />
           </div>
 
