@@ -78,9 +78,9 @@ export default function Navbar() {
             <Image
               src="/images/eco-system.jpeg"
               alt="Eco System"
-              width={70}
-              height={32}
-              className={styles.partnerLogoRed}
+              width={90}
+              height={44}
+              className={styles.ecoLogo}
               style={{ objectFit: "contain", mixBlendMode: "multiply" }}
             />
           </div>

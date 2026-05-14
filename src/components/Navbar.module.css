@@ -111,9 +111,18 @@
   object-fit: contain;
 }
 
+.ecoLogo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
 @media (max-width: 600px) {
   .partnerLogoRed {
     height: 24px;
+  }
+  .ecoLogo {
+    height: 34px;
   }
 }
 
