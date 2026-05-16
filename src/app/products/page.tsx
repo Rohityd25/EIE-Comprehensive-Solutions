@@ -71,7 +71,7 @@ const products = [
     features: ["24/7 continuous smoke & dust monitoring", "Withstands extreme weather & environments", "Advanced optical measurement technology", "Seamless CEMS integration & remote data"],
     tag: "Stack Monitoring",
     tagColor: "#7c3aed",
-    catalogue: "/catalogues/SPM.pdf",
+    catalogue: "/catalogues/Gaz SPM Data Sheet.pdf",
   },
   {
     id: 5,
@@ -85,7 +85,7 @@ const products = [
     features: ["High accuracy measurement", "No moving parts", "Suitable for harsh effluents", "Seamless data integration"],
     tag: "Water Flow",
     tagColor: "#0891b2",
-    catalogue: "/catalogues/eff-cems.pdf",
+    catalogue: "/catalogues/EIECS Catalogue.pdf",
   },
   {
     id: 6,
@@ -99,7 +99,7 @@ const products = [
     features: ["Continuous level tracking", "High-resolution sensor", "Durable stainless steel build", "Telemetry enabled"],
     tag: "Groundwater",
     tagColor: "#0891b2",
-    catalogue: "/catalogues/eff-cems.pdf",
+    catalogue: "/catalogues/EIECS Catalogue.pdf",
   },
   {
     id: 7,
@@ -113,7 +113,7 @@ const products = [
     features: ["Visualizes smoke and dust plumes", "360\u00b0 rotatable with 30x zoom", "Real-time image transmission", "Works in low visibility"],
     tag: "Real-Time Monitoring",
     tagColor: "#0284c7",
-    catalogue: "/catalogues/PTZ Camera Manual.pdf",
+    catalogue: "/catalogues/EIECS Catalogue.pdf",
   },
   {
     id: 8,
@@ -122,12 +122,12 @@ const products = [
     category: "air",
     brand: "EIECS",
     icon: "💧",
-    image: "/images/Anti Smog.png",
+    image: "/images/Smog.jpeg",
     description: "Anti-smog gun machine effectively reduces air pollution in Delhi. It works by spraying water particles into the air, which trap pollutants and bring them down to the ground.",
     features: ["Reduces air pollution", "Traps pollutants", "Brings pollutants down to the ground", "Effective in Delhi's air pollution"],
     tag: "Dust Control",
     tagColor: "#0284c7",
-    catalogue: "/catalogues/Anti%20Smog.pdf",
+    catalogue: "/catalogues/EIECS Catalogue.pdf",
   },
   {
     id: 9,
@@ -186,15 +186,15 @@ export default function ProductsPage() {
               <div key={product.id} className={styles.productCard}>
                 <div className={styles.productVisual}>
                   {product.image && (
-                      <Image
-                        src={product.image}
-                        alt={product.name}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        quality={75}
-                        priority={product.id <= 3}
-                        className={styles.productImg}
-                      />
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={75}
+                      priority={product.id <= 3}
+                      className={styles.productImg}
+                    />
                   )}
                   <div className={styles.imageOverlay} />
                   <div className={styles.productBadge}>
