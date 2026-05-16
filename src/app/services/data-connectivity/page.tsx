@@ -231,7 +231,7 @@ export default function DataConnectivityPage() {
               {[
                 { num: "700+", label: "Sites Connected" },
                 { num: "99.9%", label: "Data Uptime" },
-                { num: "15+", label: "SPCBs Integrated" },
+                { num: "500+", label: "SPCBs Integrated" },
                 { num: "24/7", label: "Support Coverage" },
               ].map((s) => (
                 <div key={s.label} className={styles.complianceStat}>
