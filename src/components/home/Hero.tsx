@@ -109,7 +109,7 @@ export default function Hero() {
 
           <div className={styles.heroCta}>
             <Link href="/contact" className="btn btn-primary btn-lg">
-              Get a Free Quote
+              Get a Quote
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                 <path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>

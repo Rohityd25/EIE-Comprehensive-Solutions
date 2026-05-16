@@ -62,7 +62,7 @@ export default function Footer() {
             </div>
             <div className={styles.ctaActions}>
               <Link href="/contact" className="btn btn-accent btn-lg">
-                Get a Free Quote
+                Get a Quote
               </Link>
               <a href="tel:9882810053" className="btn btn-outline btn-lg">
                 Call Us Now

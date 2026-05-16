@@ -92,7 +92,7 @@ export default function ContactPage() {
                   { icon: "📍", title: "Corporate Office", lines: ["A-26, Pushpanjali Enclave,", "Pitampura, New Delhi – 110034"] },
                   { icon: "📞", title: "Phone Numbers", lines: ["9882810053", "9358536247"] },
                   { icon: "✉️", title: "Email Address", lines: ["marketing@eieindia.in"] },
-                  { icon: "🕐", title: "Business Hours", lines: ["Monday – Saturday", "9:00 AM – 6:00 PM IST"] },
+                  { icon: "🕐", title: "Business Hours", lines: ["Monday – Saturday", "10:00 AM – 6:00 PM IST"] },
                 ].map((item) => (
                   <div key={item.title} className={styles.infoCard}>
                     <div className={styles.infoCardIcon}>{item.icon}</div>
