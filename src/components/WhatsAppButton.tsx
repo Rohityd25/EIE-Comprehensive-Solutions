@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./WhatsAppButton.module.css";
 
-const WHATSAPP_NUMBER = "919358536247"; // +91 9358536247
+const WHATSAPP_NUMBER = "919882810053"; // +91 9882810053
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hello! I would like to inquire about your environmental monitoring services. Please get in touch."
 );
