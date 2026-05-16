@@ -4,6 +4,7 @@ import styles from "./Footer.module.css";
 const services = [
   { href: "/services/environmental-monitoring", label: "Environmental Monitoring" },
   { href: "/services/water-waste-management", label: "Waste Water Management" },
+  { href: "/services/data-connectivity", label: "Data Connectivity" },
   { href: "/products", label: "Product Catalog" },
 ];
 

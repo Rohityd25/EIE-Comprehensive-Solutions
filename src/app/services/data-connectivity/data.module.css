@@ -1,0 +1,405 @@
+/* ─── Hero ──────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  padding: 9rem 0 5rem;
+  overflow: hidden;
+  color: var(--white);
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/engineers.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.65) 60%, rgba(22,163,74,0.18) 100%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.heroHighlight {
+  background: linear-gradient(135deg, #4ade80, #86efac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroDesc {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.85;
+  max-width: 620px;
+  margin-bottom: 2rem;
+}
+
+.heroCta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ─── Flow Diagram ───────────────────────────────────────────────────────── */
+.flowDiagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flowStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 180px;
+}
+
+.flowIconWrap {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: transform var(--transition);
+}
+
+.flowStep:hover .flowIconWrap {
+  transform: translateY(-6px) scale(1.05);
+}
+
+.flowIcon {
+  font-size: 2.25rem;
+}
+
+.flowStepLabel {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.flowStepDesc {
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+.flowArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.5rem;
+  flex-shrink: 0;
+}
+
+.arrowLine {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--brand-primary), #4ade80);
+  border-radius: 2px;
+}
+
+.arrowHead {
+  width: 0;
+  height: 0;
+  border-left: 8px solid var(--brand-primary);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  margin-top: -2px;
+  align-self: flex-end;
+}
+
+.arrowLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.25rem;
+}
+
+/* ─── Boards Grid ────────────────────────────────────────────────────────── */
+.boardsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.boardCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background: var(--white);
+  border: 1.5px solid var(--gray-100);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.25rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+}
+
+.boardCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(22,163,74,0.2);
+}
+
+.boardBadgeCircle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.boardShort {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+.boardName {
+  font-size: 0.78rem;
+  color: var(--gray-700);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* ─── Features Grid ──────────────────────────────────────────────────────── */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 1rem;
+}
+
+.featureCard {
+  background: var(--white);
+  border: 1.5px solid var(--gray-100);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(22,163,74,0.25);
+}
+
+.featureIconWrap {
+  width: 52px;
+  height: 52px;
+  background: rgba(22,163,74,0.09);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featureIcon {
+  font-size: 1.6rem;
+}
+
+.featureTitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.featureDesc {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  line-height: 1.75;
+}
+
+/* ─── Compliance Section (dark) ──────────────────────────────────────────── */
+.complianceSection {
+  padding: var(--section-py) 0;
+  background: var(--dark-900);
+  color: var(--white);
+}
+
+.complianceGrid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5rem;
+  align-items: start;
+}
+
+.complianceTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.complianceDesc {
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.85;
+  margin-bottom: 1.75rem;
+}
+
+.compliancePoints {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.compliancePt {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: 500;
+}
+
+.complianceStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.complianceStat {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(22,163,74,0.2);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.complianceStat:hover {
+  background: rgba(22,163,74,0.08);
+  border-color: rgba(22,163,74,0.4);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-green);
+}
+
+.complianceStatNum {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4ade80, #86efac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.complianceStatLabel {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ─── CTA Box ────────────────────────────────────────────────────────────── */
+.ctaBox {
+  position: relative;
+  background: var(--gray-50);
+  border: 1.5px solid var(--gray-100);
+  border-radius: var(--radius-xl);
+  padding: 4rem 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ctaGlow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(22,163,74,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ctaTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.ctaDesc {
+  font-size: 1rem;
+  color: var(--gray-500);
+  line-height: 1.8;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .boardsGrid { grid-template-columns: repeat(3, 1fr); }
+  .complianceGrid { grid-template-columns: 1fr; }
+  .complianceStats { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .featuresGrid { grid-template-columns: repeat(2, 1fr); }
+  .flowDiagram { flex-direction: column; }
+  .flowArrow { transform: rotate(90deg); }
+}
+
+@media (max-width: 640px) {
+  .boardsGrid { grid-template-columns: repeat(2, 1fr); }
+  .featuresGrid { grid-template-columns: 1fr; }
+  .complianceStats { grid-template-columns: repeat(2, 1fr); }
+  .ctaBox { padding: 2.5rem 1.5rem; }
+}
