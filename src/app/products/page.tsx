@@ -136,18 +136,12 @@ const products = [
     category: "air",
     brand: "Saaphzone",
     icon: "🔭",
-    image: "/images/Datalogger.jpeg",
-    description: "High-precision PM2.5 & PM10 monitor with Cyclone Type detection and real-time connectivity to CPCB/SPCB servers.",
-    features: [
-      "Mass concentration: PM2.5 (0.3-2.5μm) & PM10 (0.3-10.0μm)",
-      "Specified Range: 0 to 1,000 μg/m³",
-      "Laser Wavelength: 660 nm | Detection: Cyclone Type",
-      "Real-time transmission to CPCB/SPCB servers",
-      "Secure data encryption & remote alerts"
-    ],
+    image: "/images/Air-quality-device.png",
+    description: "Data Transmission & Connectivity to CPCB/SPCB's",
+    features: ["Real-time data transmission", "CPCB/SPCB server connectivity", "Remote configuration & alerts", "Secure data encryption"],
     tag: "Telemetry",
     tagColor: "#7c3aed",
-    catalogue: "/catalogues/EIECS%20Catalogue.pdf",
+    catalogue: "/catalogues/EIECS Catalogue.pdf",
   },
 ];
 
