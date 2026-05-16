@@ -248,32 +248,6 @@ export default function DataConnectivityPage() {
         </div>
       </section>
 
-      {/* ── CTA ─────────────────────────────────────────────────────── */}
-      <section className="section">
-        <div className="container">
-          <div className={styles.ctaBox}>
-            <div className={styles.ctaGlow} />
-            <div className="badge badge-green" style={{ marginBottom: "1rem" }}>
-              Get Started
-            </div>
-            <h2 className={styles.ctaTitle}>
-              Ready to Connect Your Site to CPCB/SPCBs?
-            </h2>
-            <p className={styles.ctaDesc}>
-              Our experts will assess your monitoring setup and design the right
-              data connectivity solution — fully compliant and deployed within days.
-            </p>
-            <div className={styles.ctaActions}>
-              <Link href="/contact" className="btn btn-primary btn-lg">
-                Request a Free Consultation
-              </Link>
-              <a href="tel:9882810053" className="btn btn-outline btn-lg">
-                Call: 9882810053
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
