@@ -136,7 +136,7 @@ const products = [
     category: "air",
     brand: "Saaphzone",
     icon: "🔭",
-    image: "/images/Air-quality-device.png",
+    image: "/images/Datalogger.jpeg",
     description: "Data Transmission & Connectivity to CPCB/SPCB's",
     features: ["Real-time data transmission", "CPCB/SPCB server connectivity", "Remote configuration & alerts", "Secure data encryption"],
     tag: "Telemetry",
