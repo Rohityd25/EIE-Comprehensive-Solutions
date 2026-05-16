@@ -173,7 +173,7 @@ export default function ProductsPage() {
         <div className="container">
           <div className="section-header">
             <div className="badge badge-green">Our Products</div>
-            <h2>Analytical Instruments Catalog</h2>
+            <h2>Analytical Instruments System</h2>
             <div className="divider" />
             <p style={{ marginTop: "1rem" }}>
               All instruments come with manufacturer warranty, calibration certificates, and
