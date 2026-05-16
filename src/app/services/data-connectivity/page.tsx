@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./data.module.css";
 
@@ -9,12 +10,11 @@ export const metadata: Metadata = {
 };
 
 const boards = [
-  { name: "Central Pollution\nControl Board", short: "CPCB", color: "#0284c7" },
-  { name: "Delhi Pollution Control\nCommittee", short: "DPCC", color: "#0891b2" },
-  { name: "Haryana Pollution\nControl Board", short: "HPCB", color: "#059669" },
-  { name: "Rajasthan Pollution\nControl Board", short: "RSPCB", color: "#16a34a" },
-  { name: "Punjab Pollution\nControl Board", short: "PPCB", color: "#7c3aed" },
-  { name: "UP Pollution Control\nBoard", short: "UPPCB", color: "#b45309" },
+  { name: "Central Pollution\nControl Board", short: "CPCB", logo: "/images/CPCB.png" },
+  { name: "Delhi Pollution Control\nCommittee", short: "DPCC", logo: "/images/DPCC.png" },
+  { name: "Haryana Pollution\nControl Board", short: "HSPCB", logo: "/images/HSPCB.png" },
+  { name: "Rajasthan Pollution\nControl Board", short: "RSPCB", logo: "/images/RSPCB.png" },
+  { name: "Punjab Pollution\nControl Board", short: "PPCB", logo: "/images/PPCB.png" },
 ];
 
 const features = [
@@ -155,11 +155,15 @@ export default function DataConnectivityPage() {
           <div className={styles.boardsGrid}>
             {boards.map((board) => (
               <div key={board.short} className={styles.boardCard}>
-                <div
-                  className={styles.boardBadgeCircle}
-                  style={{ background: board.color, boxShadow: `0 0 24px ${board.color}55` }}
-                >
-                  <span className={styles.boardShort}>{board.short}</span>
+                <div className={styles.boardLogoWrap}>
+                  <Image
+                    src={board.logo}
+                    alt={board.short + " logo"}
+                    width={120}
+                    height={120}
+                    className={styles.boardLogoImg}
+                    style={{ objectFit: "contain" }}
+                  />
                 </div>
                 <div className={styles.boardName}>
                   {board.name.split("\n").map((line, i) => (
