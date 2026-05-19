@@ -75,15 +75,20 @@ export default function Navbar() {
               />
             </div>
 
+            {/* Divider */}
+            <div className={styles.logoDivider} />
+
             {/* Eco System Logo */}
-            <Image
-              src="/images/eco-logo-new.png"
-              alt="Eco System"
-              width={160}
-              height={75}
-              className={styles.ecoLogo}
-              style={{ objectFit: "contain" }}
-            />
+            <div className={styles.partnerLogoWrap} title="Eco System">
+              <Image
+                src="/images/eco-logo-new.png"
+                alt="Eco System"
+                width={160}
+                height={75}
+                className={styles.ecoLogo}
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </div>
 
           {/* Desktop Nav */}

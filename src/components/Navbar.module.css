@@ -77,8 +77,8 @@
 
 .eieLabel {
   font-family: var(--font-display);
-  font-size: 0.6rem;
-  font-weight: 800;
+  font-size: 0.7rem;
+  font-weight: 900;
   letter-spacing: 0.18em;
   color: var(--brand-primary);
   text-transform: uppercase;
@@ -90,12 +90,9 @@
 
 .logoDivider {
   width: 1px;
-  height: 36px;
-  background: rgba(255,255,255,0.18);
+  height: 40px;
+  background: rgba(0,0,0,0.18);
   flex-shrink: 0;
-}
-.header:not(.heroPage) .logoDivider {
-  background: rgba(0,0,0,0.12);
 }
 
 .partnerLogoWrap {
@@ -112,17 +109,18 @@
 }
 
 .ecoLogo {
-  height: 75px;
+  height: 52px;
   width: auto;
   object-fit: contain;
+  display: block;
 }
 
 @media (max-width: 600px) {
   .partnerLogoRed {
-    height: 24px;
+    height: 22px;
   }
   .ecoLogo {
-    height: 34px;
+    height: 40px;
   }
 }
 
