@@ -60,7 +60,7 @@ export default function Partners() {
               <div className={styles.opBadge2}>Channel Partner</div>
               <div className={styles.opLogoWrap}>
                 <Image
-                  src="/images/Eco Logo New.png"
+                  src="/images/eco-logo-new.png"
                   alt="Eco System Logo"
                   width={200}
                   height={80}

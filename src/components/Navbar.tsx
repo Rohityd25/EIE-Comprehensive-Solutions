@@ -77,7 +77,7 @@ export default function Navbar() {
 
             {/* Eco System Logo */}
             <Image
-              src="/images/Eco Logo New.png"
+              src="/images/eco-logo-new.png"
               alt="Eco System"
               width={160}
               height={75}
