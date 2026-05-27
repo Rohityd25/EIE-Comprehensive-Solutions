@@ -227,7 +227,7 @@
 }
 
 .partnerLogoWrap {
-  height: 90px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +236,7 @@
 }
 
 .partnerLogo {
-  max-height: 65px;
+  max-height: 95px;
   width: auto;
   height: auto;
   object-fit: contain;

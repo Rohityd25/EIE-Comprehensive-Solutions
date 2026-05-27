@@ -76,7 +76,7 @@
 }
 
 .opLogoWrap {
-  height: 100px;
+  height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@
 
 .opLogo {
   opacity: 1;
-  max-height: 75px;
+  max-height: 100px;
   width: auto;
   height: auto;
   object-fit: contain;

@@ -57,9 +57,9 @@ export default function About() {
               EIE empowers industries to achieve sustainable operations while adhering to regulatory compliance.
             </p>
             <p className={styles.desc}>
-              As the <strong>Authorized Partner of Advance Analytik (Hungary)</strong> and 
-              Channel Partner of <strong>Saaphzone Technologies</strong> (experts in robust 
-              data monitoring, acquisition, and control systems), we bring global precision engineering 
+              As the <strong>Authorized Exclusive Partner of Advance Analytik (Hungary)</strong> and
+              Channel Partner of <strong>Saaphzone Technologies</strong> (experts in robust
+              data monitoring, acquisition, and control systems), we bring global precision engineering
               and cutting-edge data intelligence to Indian industries with full local support.
             </p>
 
@@ -85,9 +85,9 @@ export default function About() {
             <Link href="/about" className="btn btn-primary" style={{ marginTop: "2rem" }}>
               Read More About Us →
             </Link>
-            </ScrollReveal>
-          </div>
+          </ScrollReveal>
         </div>
-      </section>
+      </div>
+    </section>
   );
 }
