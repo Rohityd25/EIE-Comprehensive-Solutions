@@ -23,7 +23,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className="container">
-          <div className="badge badge-green" style={{ marginBottom: "1.25rem" }}>About EIE</div>
+
           <h1 className={styles.heroTitle}>
             15+ Years of Environmental <br />
             Engineering Excellence
