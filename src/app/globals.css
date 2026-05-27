@@ -292,6 +292,42 @@ h1, h2, h3, h4, h5, h6 {
 .animate-fade-in { animation: fadeIn 0.5s ease both; }
 .animate-float { animation: float 3s ease-in-out infinite; }
 
+/* ─── Scroll Reveal Animations ───────────────────────────────────────────── */
+.scroll-reveal {
+  opacity: 0;
+  transition-property: transform, opacity;
+  will-change: transform, opacity;
+}
+
+.reveal-fadeInUp {
+  transform: translateY(30px);
+}
+
+.reveal-fadeInDown {
+  transform: translateY(-30px);
+}
+
+.reveal-fadeInLeft {
+  transform: translateX(-30px);
+}
+
+.reveal-fadeInRight {
+  transform: translateX(30px);
+}
+
+.reveal-scaleIn {
+  transform: scale(0.96);
+}
+
+.reveal-fadeIn {
+  transform: none;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: none;
+}
+
 /* ─── Utility ───────────────────────────────────────────────────────────── */
 .text-center { text-align: center; }
 .flex { display: flex; }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 import styles from "./Partners.module.css";
 
 const clients = [
@@ -30,7 +31,7 @@ export default function Partners() {
           </div>
           <div className={styles.opGrid}>
             {/* Advance Analytik */}
-            <div className={styles.opCard}>
+            <ScrollReveal animation="fadeInUp" delay={0} className={styles.opCard}>
               <div className={styles.opBadge}>Authorized Dealer</div>
               <div className={styles.opLogoWrap}>
                 <Image
@@ -53,10 +54,10 @@ export default function Partners() {
               >
                 Visit Website →
               </a>
-            </div>
+            </ScrollReveal>
 
             {/* Eco System */}
-            <div className={styles.opCard}>
+            <ScrollReveal animation="fadeInUp" delay={100} className={styles.opCard}>
               <div className={styles.opBadge2}>Channel Partner</div>
               <div className={styles.opLogoWrap}>
                 <Image
@@ -72,7 +73,26 @@ export default function Partners() {
               <p className={styles.opDesc}>
                 Extended service portfolio through our channel partnership with Eco System.
               </p>
-            </div>
+            </ScrollReveal>
+
+            {/* Saaphzone Technologies */}
+            <ScrollReveal animation="fadeInUp" delay={200} className={styles.opCard}>
+              <div className={styles.opBadge2}>Channel Partner</div>
+              <div className={styles.opLogoWrap}>
+                <Image
+                  src="/images/Saaphzone.jpeg"
+                  alt="Saaphzone Technologies Logo"
+                  width={200}
+                  height={80}
+                  className={styles.opLogo}
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+              <h3 className={styles.opName}>Saaphzone Technologies</h3>
+              <p className={styles.opDesc}>
+                Our strategic partnership with Saaphzone Technologies enables us to provide robust data monitoring, acquisition, and control systems, ensuring cutting-edge data intelligence for regulatory compliance.
+              </p>
+            </ScrollReveal>
           </div>
         </div>
       </div>

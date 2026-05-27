@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 import styles from "./About.module.css";
 
 export default function About() {
@@ -8,7 +9,7 @@ export default function About() {
       <div className="container">
         <div className={styles.grid}>
           {/* Visual */}
-          <div className={styles.visual}>
+          <ScrollReveal animation="fadeInLeft" className={styles.visual}>
             <div className={styles.mainImgWrap}>
               <Image
                 src="/images/engineers.jpg"
@@ -22,7 +23,7 @@ export default function About() {
               <div className={styles.floatCard}>
                 <div className={styles.floatCardIcon}>🏆</div>
                 <div>
-                  <div className={styles.floatCardNum}>8+</div>
+                  <div className={styles.floatCardNum}>15+</div>
                   <div className={styles.floatCardLabel}>Years of Excellence</div>
                 </div>
               </div>
@@ -41,10 +42,10 @@ export default function About() {
                 <span>Advance Analytik Partner</span>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Content */}
-          <div className={styles.content}>
+          <ScrollReveal animation="fadeInRight" className={styles.content}>
             <div className="badge badge-green" style={{ marginBottom: "1rem" }}>About EIE</div>
             <h2 className={styles.title}>
               Welcome to <span className="gradient-text">EIE Comprehensive Solutions</span>
@@ -95,9 +96,9 @@ export default function About() {
             <Link href="/about" className="btn btn-primary" style={{ marginTop: "2rem" }}>
               Read More About Us →
             </Link>
+            </ScrollReveal>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }

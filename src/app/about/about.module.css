@@ -17,7 +17,7 @@
 .heroSubtitle {
   font-size: 1.125rem;
   color: var(--gray-500);
-  max-width: 640px;
+  max-width: 850px;
   margin: 0 auto;
   line-height: 1.8;
 }
@@ -44,9 +44,24 @@
   box-shadow: var(--shadow-xl);
 }
 
-.mvIcon {
-  font-size: 2.5rem;
-  margin-bottom: 1.25rem;
+.mvIconWrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--mv-bg, rgba(22, 163, 74, 0.08));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mv-color, var(--brand-primary));
+  margin-bottom: 1.5rem;
+  transition: all var(--transition);
+}
+
+.mvCard:hover .mvIconWrap {
+  transform: scale(1.1) rotate(6deg);
+  background: var(--mv-color);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
 
 .mvTitle {
@@ -211,6 +226,18 @@
   line-height: 1.8;
 }
 
+.partnerLogoWrap {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.partnerLogo {
+  max-height: 70px;
+  width: auto;
+}
+
 @media (max-width: 1024px) {
   .mvGrid { grid-template-columns: 1fr; }
   .partnersGrid { grid-template-columns: 1fr; }
@@ -229,3 +256,103 @@
   .timelineContent { padding: 1rem; }
   .partnerCardFull, .partnerCard { padding: 1.5rem; }
 }
+
+/* ─── Expert Container (About Page Hero) ─────────────────────────────────── */
+.expertContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  background: var(--white);
+  border: 1px solid rgba(22, 163, 74, 0.15);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  box-shadow: var(--shadow-lg), 0 1px 3px rgba(22, 163, 74, 0.05);
+  max-width: 960px;
+  margin: 3rem auto 0;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.expertContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--brand-primary) 0%, #4ade80 100%);
+}
+
+.expertAvatarWrap {
+  flex-shrink: 0;
+}
+
+.expertAvatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-primary) 0%, #4ade80 100%);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.25);
+  border: 3px solid var(--white);
+}
+
+.expertContent {
+  flex: 1;
+}
+
+.expertName {
+  font-family: var(--font-display);
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 0.25rem;
+}
+
+.expertTitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  margin-bottom: 0.25rem;
+}
+
+.expertDegree {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-500);
+  margin-bottom: 1.25rem;
+}
+
+.expertBio {
+  font-size: 0.96875rem;
+  color: var(--gray-600);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .expertContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+  }
+  .expertContainer::before {
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+  }
+  .expertAvatar {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+}
+

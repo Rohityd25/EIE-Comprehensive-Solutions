@@ -153,7 +153,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className={styles.footerCertification}>
-                <span>🏆 8+ Years of Experience</span>
+                <span>🏆 15+ Years of Experience</span>
                 <span>✅ 700+ Sites Monitored</span>
                 <span>⭐ 700+ Happy Clients</span>
               </div>

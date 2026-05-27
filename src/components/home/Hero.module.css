@@ -188,3 +188,28 @@
   .heroCta { flex-direction: column; width: 100%; }
   .heroCta a { width: 100%; text-align: center; justify-content: center; }
 }
+
+.badgeRed {
+  background: rgba(239, 68, 68, 0.12) !important;
+  border: 1px solid rgba(239, 68, 68, 0.35) !important;
+  color: #f87171 !important;
+}
+
+.badgeDotRed {
+  background: #ef4444 !important;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.8) !important;
+  animation: blinkRed 1.2s ease-in-out infinite !important;
+}
+
+@keyframes blinkRed {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.8), 0 0 16px rgba(239, 68, 68, 0.4);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.92);
+    box-shadow: 0 0 2px rgba(239, 68, 68, 0.2);
+  }
+}

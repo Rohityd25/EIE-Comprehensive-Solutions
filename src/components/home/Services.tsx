@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 import styles from "./Services.module.css";
 
 const services = [
@@ -40,8 +41,12 @@ export default function Services() {
         </div>
 
         <div className={styles.grid}>
-          {services.map((svc) => (
-            <div key={svc.slug} className={styles.card}>
+          {services.map((svc, i) => (
+            <ScrollReveal
+              key={svc.slug}
+              animation={i % 2 === 0 ? "fadeInLeft" : "fadeInRight"}
+              className={styles.card}
+            >
               {/* Image */}
               <div className={styles.cardImage}>
                 <Image
@@ -86,7 +91,7 @@ export default function Services() {
                   </svg>
                 </Link>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 

@@ -91,13 +91,12 @@ export default function Hero() {
 
       <div className="container">
         <div className={styles.heroContent}>
-          <div className={`${styles.badge} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}>
-            <span className={styles.badgeDot} />
-            <span>{slide.badge}</span>
+          <div className={`${styles.badge} ${styles.badgeRed}`}>
+            <span className={`${styles.badgeDot} ${styles.badgeDotRed}`} />
+            <span>Authorized Exclusive Dealer of Advance Analytik</span>
           </div>
 
           <h1 className={`${styles.heroTitle} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}>
-            {slide.title}{" "}
             <span className={styles.heroHighlight}>{slide.highlight}</span>
             <br />
             <span className={styles.heroSubLine}>{slide.subtitle}</span>

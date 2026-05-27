@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 import styles from "./Industries.module.css";
 
 const industries = [
@@ -40,7 +41,12 @@ export default function Industries() {
 
         <div className={styles.grid}>
           {industries.map((ind, i) => (
-            <div key={ind.name} className={styles.card} style={{ animationDelay: `${i * 0.15}s` }}>
+            <ScrollReveal
+              key={ind.name}
+              animation="fadeInUp"
+              delay={i * 100}
+              className={styles.card}
+            >
               <div className={styles.imgWrap}>
                 <Image
                   src={ind.image}
@@ -55,7 +61,7 @@ export default function Industries() {
                 <p className={styles.cardDesc}>{ind.desc}</p>
                 <div className={styles.line} />
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 

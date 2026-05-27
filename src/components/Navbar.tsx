@@ -27,7 +27,6 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const pathname = usePathname();
-  const isHeroPage = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -41,7 +40,7 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <header className={`${styles.header} ${isHeroPage ? styles.heroPage : ""} ${scrolled ? styles.scrolled : ""}`}>
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className="container">
         <nav className={styles.nav}>
           {/* Logo Group */}

@@ -23,12 +23,12 @@ const stats = [
     suffix: "+",
   },
   {
-    number: "8+",
+    number: "15+",
     label: "Years Experience",
     description: "Years of environmental engineering expertise",
     icon: "🏆",
     color: "#b45309",
-    end: 8,
+    end: 15,
     suffix: "+",
   },
   {
