@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 const milestones = [
   { year: "2018", title: "Founded Ecosystem", desc: "Eco System established to lay the foundation for advanced environmental technologies." },
+  { year: "2020", title: "EIE Complete Solutions(EIECSPL)", desc: "EIE Complete Solutions Incorporated to offer advanced environmental monitoring and data connectivity solutions." },
   { year: "2024", title: "300+ Sites & Happy Clients", desc: "Successfully scaled operations to manage up to 300+ active environmental monitoring sites and happy clients." },
   { year: "2025", title: "Founded EIECS", desc: "EIE Comprehensive Solutions (EIECS) officially founded to integrate expert consultation and state-of-the-art environmental systems." },
   { year: "2026", title: "700+ Sites & Clients", desc: "Reached a landmark milestone of 700+ active sites and satisfied clients across India." },
@@ -33,7 +34,7 @@ export default function AboutPage() {
             </div>
             <div className={styles.expertContent}>
               <h2 className={styles.expertName}>Dr. Vivek Prakash Pankaj</h2>
-              <div className={styles.expertTitle}>Environmental Expert & Leadership</div>
+              <div className={styles.expertTitle}>Environmental Expert</div>
               <div className={styles.expertDegree}>Ph.D. in Environmental Engineering (NIT Hamirpur)</div>
               <p className={styles.expertBio}>
                 Dr. Vivek Prakash Pankaj is an Environmental Expert and Research Professional with a Ph.D. in Environmental Engineering from the National Institute of Technology (NIT) Hamirpur. He possesses extensive experience in environmental technologies, pollution control systems, and sustainable industrial solutions. Dr. Pankaj has contributed to various research publications and scientific journals in the field of environmental engineering and renewable energy. He also carries valuable experience associated with CPCB guidelines, OCEMS implementation, and industrial environmental compliance. With over 5–6 years of leadership and operational expertise, he successfully manages and operates multiple companies across environmental, energy, and sustainability sectors. His vision is focused on delivering innovative, technology-driven, and eco-friendly solutions for a cleaner and sustainable future.
@@ -138,7 +139,7 @@ export default function AboutPage() {
           <div className={styles.clientsNote}>
             <p>
               Our trusted clients include <strong>Mercedes-Benz, Berger Paints, DS Group, Gaur City, Yakult India,
-              Venkateshwar Hospital</strong>, and 700+ other industry leaders who rely on us for their
+                Venkateshwar Hospital</strong>, and 700+ other industry leaders who rely on us for their
               environmental compliance needs.
             </p>
           </div>
@@ -168,7 +169,7 @@ export default function AboutPage() {
               </div>
               <h3 className={styles.partnerName}>Advance Analytik® — Hungary</h3>
               <p className={styles.partnerDesc}>
-                As the authorized partner for Advance Analytik Hungary, we bring world-class
+                As the authorized exclusive partner for Advance Analytik Hungary, we bring world-class
                 analytical instrumentation to Indian industries. Our partnership ensures access
                 to the latest environmental monitoring technologies backed by European precision
                 engineering.
