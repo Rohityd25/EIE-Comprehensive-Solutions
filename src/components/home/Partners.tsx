@@ -84,10 +84,10 @@ export default function Partners() {
                 <Image
                   src="/images/Saaphzone.jpeg"
                   alt="Saaphzone Technologies Logo"
-                  width={280}
-                  height={120}
+                  width={300}
+                  height={130}
                   className={styles.opLogo}
-                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "110px" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "130px" }}
                 />
               </div>
               <h3 className={styles.opName}>Saaphzone Technologies</h3>

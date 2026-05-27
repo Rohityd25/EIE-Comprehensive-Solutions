@@ -208,10 +208,10 @@ export default function AboutPage() {
                 <Image
                   src="/images/Saaphzone.jpeg"
                   alt="Saaphzone Technologies Logo"
-                  width={280}
-                  height={120}
+                  width={300}
+                  height={130}
                   className={styles.partnerLogo}
-                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "105px" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "125px" }}
                 />
               </div>
               <h3 className={styles.partnerName}>Saaphzone Technologies</h3>
