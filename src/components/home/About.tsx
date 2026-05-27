@@ -57,7 +57,7 @@ export default function About() {
               EIE empowers industries to achieve sustainable operations while adhering to regulatory compliance.
             </p>
             <p className={styles.desc}>
-              As the <strong>Authorized Dealer of Advance Analytik (Hungary)</strong> and 
+              As the <strong>Authorized Partner of Advance Analytik (Hungary)</strong> and 
               Channel Partner of <strong>Saaphzone Technologies</strong> (experts in robust 
               data monitoring, acquisition, and control systems), we bring global precision engineering 
               and cutting-edge data intelligence to Indian industries with full local support.
@@ -80,18 +80,7 @@ export default function About() {
               ))}
             </div>
 
-            {/* Partner logo */}
-            <div className={styles.partnerBar}>
-              <span className={styles.partnerLabel}>Authorized Dealer</span>
-              <Image
-                src="/images/advance-analytik-logo.png"
-                alt="Advance Analytik"
-                width={140}
-                height={36}
-                className={`${styles.partnerLogoImg} advance-analytik-red`}
-              />
-              <span className={styles.partnerSep}>·</span>
-            </div>
+
 
             <Link href="/about" className="btn btn-primary" style={{ marginTop: "2rem" }}>
               Read More About Us →

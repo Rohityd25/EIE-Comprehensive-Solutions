@@ -5,7 +5,7 @@ import styles from "./products.module.css";
 
 export const metadata: Metadata = {
   title: "Products & Instruments",
-  description: "Environmental monitoring instruments, gas analyzers, emission monitoring systems from Advance Analytik Hungary. Authorized dealer in India.",
+  description: "Environmental monitoring instruments, gas analyzers, emission monitoring systems from Advance Analytik Hungary. Authorized partner in India.",
 };
 
 const categories = [
@@ -161,7 +161,7 @@ export default function ProductsPage() {
               <span className={styles.heroHighlight}> Instruments & Systems</span>
             </h1>
             <p className={styles.heroDesc}>
-              Authorized dealer for Advance Analytik Hungary. We supply world-class
+              Authorized partner for Advance Analytik Hungary. We supply world-class
               analytic analyzers for air quality, water quality, and emission monitoring
               across India with full installation, calibration and AMC support.
             </p>

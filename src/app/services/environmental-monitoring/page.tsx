@@ -101,7 +101,7 @@ export default function EnvironmentalMonitoringPage() {
               <h2 className={styles.introTitle}>Precision Monitoring for a Cleaner India</h2>
               <div className="divider divider-left" style={{ marginBottom: "1.5rem" }} />
               <p className={styles.introDesc}>
-                As the Authorized Dealer of <strong>Advance Analytik, Hungary</strong>, EIE brings world-class
+                As the Authorized Partner of <strong>Advance Analytik, Hungary</strong>, EIE brings world-class
                 analytical instrumentation to Indian industries. Our environmental monitoring solutions
                 cover ambient air quality, stack emissions, meteorological parameters, and indoor air quality.
               </p>
@@ -167,10 +167,10 @@ export default function EnvironmentalMonitoringPage() {
         <div className="container">
           <div className={styles.partnerContent}>
             <div>
-              <div className="badge badge-dark" style={{ marginBottom: "0.875rem" }}>Authorized Dealer</div>
+              <div className="badge badge-dark" style={{ marginBottom: "0.875rem" }}>Authorized Partner</div>
               <h2 className={styles.partnerTitle}>Advance Analytik® — Hungary</h2>
               <p className={styles.partnerDesc}>
-                EIE is the exclusive authorized dealer of Advance Analytik in India. This partnership
+                EIE is the exclusive authorized partner of Advance Analytik in India. This partnership
                 gives our clients direct access to Hungarian precision engineering with full local support.
               </p>
               <a href="https://www.advanceanalytik.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: "1.5rem" }}>

@@ -10,7 +10,7 @@ import ContactCta from "@/components/home/ContactCta";
 export const metadata: Metadata = {
   title: "EIE Comprehensive Solutions | Environmental & Engineering Solutions India",
   description:
-    "Leading environmental monitoring and engineering company in India. Specializing in air quality monitoring, waste water management, and pollution control. Authorized Dealer of Advance Analytik (Hungary).",
+    "Leading environmental monitoring and engineering company in India. Specializing in air quality monitoring, waste water management, and pollution control. Authorized Partner of Advance Analytik (Hungary).",
 };
 
 export default function HomePage() {

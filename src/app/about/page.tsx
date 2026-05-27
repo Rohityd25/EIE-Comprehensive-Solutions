@@ -6,7 +6,7 @@ import styles from "./about.module.css";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about EIE Comprehensive Solutions — 15+ years of environmental engineering excellence. Authorized Dealer of Advance Analytik Hungary.",
+    "Learn about EIE Comprehensive Solutions — 15+ years of environmental engineering excellence. Authorized Partner of Advance Analytik Hungary.",
 };
 
 const milestones = [
@@ -155,7 +155,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.partnersGrid}>
             <ScrollReveal animation="fadeInUp" delay={0} className={styles.partnerCard}>
-              <div className={styles.partnerBadge}>Authorized Dealer</div>
+              <div className={styles.partnerBadge}>Authorized Partner</div>
               <div className={styles.partnerLogoWrap}>
                 <Image
                   src="/images/advance-analytik-logo.png"
@@ -168,7 +168,7 @@ export default function AboutPage() {
               </div>
               <h3 className={styles.partnerName}>Advance Analytik® — Hungary</h3>
               <p className={styles.partnerDesc}>
-                As the authorized dealer for Advance Analytik Hungary, we bring world-class
+                As the authorized partner for Advance Analytik Hungary, we bring world-class
                 analytical instrumentation to Indian industries. Our partnership ensures access
                 to the latest environmental monitoring technologies backed by European precision
                 engineering.
@@ -207,10 +207,10 @@ export default function AboutPage() {
                 <Image
                   src="/images/Saaphzone.jpeg"
                   alt="Saaphzone Technologies Logo"
-                  width={150}
-                  height={60}
+                  width={260}
+                  height={110}
                   className={styles.partnerLogo}
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", maxHeight: "85px", height: "auto" }}
                 />
               </div>
               <h3 className={styles.partnerName}>Saaphzone Technologies</h3>

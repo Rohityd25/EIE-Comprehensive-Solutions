@@ -143,7 +143,7 @@ export default function Footer() {
               <h4 className={styles.footerColTitle}>Our Partners</h4>
               <div className={styles.partnerBadges}>
                 <div className={styles.partnerBadge}>
-                  <span className={styles.partnerBadgeLabel}>Authorized Dealer</span>
+                  <span className={styles.partnerBadgeLabel}>Authorized Partner</span>
                   <span className={styles.partnerBadgeName}>Advance Analytik®</span>
                   <span className={styles.partnerBadgeCountry}>Hungary</span>
                 </div>

@@ -9,7 +9,7 @@ const slides = [
   {
     id: 1,
     image: "/images/hero-factory.jpg",
-    badge: "Authorized Dealer · Advance Analytik® Hungary",
+    badge: "Authorized Partner · Advance Analytik® Hungary",
     title: "Leading the Fight Against",
     highlight: "Pollution",
     subtitle: "with Advanced Monitoring & Abatement Solutions",
@@ -90,11 +90,14 @@ export default function Hero() {
 
 
       <div className="container">
-        <div className={styles.heroContent}>
+        <div className={styles.badgeWrapper}>
           <div className={`${styles.badge} ${styles.badgeRed}`}>
-            <span>Authorized Exclusive Dealer of Advance Analytik</span>
             <span className={`${styles.badgeDot} ${styles.badgeDotRed}`} />
+            <span>Authorized Exclusive Partner of Advance Analytik</span>
           </div>
+        </div>
+
+        <div className={styles.heroContent}>
 
           <h1 className={`${styles.heroTitle} ${isAnimating ? styles.fadeOut : styles.fadeIn}`}>
             <span className={styles.heroHighlight}>{slide.highlight}</span>

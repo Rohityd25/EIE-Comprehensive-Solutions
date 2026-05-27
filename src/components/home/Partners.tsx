@@ -25,32 +25,34 @@ export default function Partners() {
       <div className={styles.officialPartners}>
         <div className="container">
           <div className={styles.opHeader}>
-            <div className="badge badge-dark">Official Partnerships</div>
+            <div className="badge badge-amber">Official Partnerships</div>
             <h2 className={styles.opTitle}>Powered by World-Class Partnerships</h2>
             <div className="divider" style={{ marginBottom: 0 }} />
           </div>
           <div className={styles.opGrid}>
             {/* Advance Analytik */}
             <ScrollReveal animation="fadeInUp" delay={0} className={styles.opCard}>
-              <div className={styles.opBadge}>Authorized Dealer</div>
+              <div className={styles.opBadge}>Authorized Partner</div>
               <div className={styles.opLogoWrap}>
                 <Image
                   src="/images/advance-analytik-logo.png"
                   alt="Advance Analytik Hungary"
-                  width={200}
-                  height={56}
+                  width={180}
+                  height={60}
                   className={`${styles.opLogo} advance-analytik-red`}
+                  style={{ objectFit: "contain" }}
                 />
               </div>
               <h3 className={styles.opName}>Advance Analytik® — Hungary</h3>
               <p className={styles.opDesc}>
-                European precision environmental instrumentation. Exclusive authorized dealer for all of India.
+                European precision environmental instrumentation. Exclusive authorized partner for all of India.
               </p>
               <a
                 href="https://www.advanceanalytik.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.opLink}
+                className="btn btn-outline-green"
+                style={{ marginTop: "1.25rem" }}
               >
                 Visit Website →
               </a>
@@ -63,8 +65,8 @@ export default function Partners() {
                 <Image
                   src="/images/eco-logo-new.png"
                   alt="Eco System Logo"
-                  width={200}
-                  height={80}
+                  width={180}
+                  height={60}
                   className={styles.opLogo}
                   style={{ objectFit: "contain" }}
                 />
@@ -82,10 +84,10 @@ export default function Partners() {
                 <Image
                   src="/images/Saaphzone.jpeg"
                   alt="Saaphzone Technologies Logo"
-                  width={200}
-                  height={80}
+                  width={260}
+                  height={110}
                   className={styles.opLogo}
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", maxHeight: "95px", height: "auto" }}
                 />
               </div>
               <h3 className={styles.opName}>Saaphzone Technologies</h3>

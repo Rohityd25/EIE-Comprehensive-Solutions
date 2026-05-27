@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | EIE Comprehensive Solutions",
   },
   description:
-    "EIE Comprehensive Solutions is a pioneering environmental and engineering company specializing in advanced air quality monitoring, waste water management, and pollution control technologies. Authorized Dealer of Advance Analytik (Hungary).",
+    "EIE Comprehensive Solutions is a pioneering environmental and engineering company specializing in advanced air quality monitoring, waste water management, and pollution control technologies. Authorized Partner of Advance Analytik (Hungary).",
   keywords: [
     "environmental monitoring",
     "air quality monitoring",
