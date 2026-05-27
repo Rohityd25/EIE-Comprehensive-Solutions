@@ -161,10 +161,10 @@ export default function AboutPage() {
                 <Image
                   src="/images/advance-analytik-logo.png"
                   alt="Advance Analytik Hungary Logo"
-                  width={180}
-                  height={50}
+                  width={280}
+                  height={120}
                   className={styles.partnerLogo}
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "105px" }}
                 />
               </div>
               <h3 className={styles.partnerName}>Advance Analytik® — Hungary</h3>
@@ -190,10 +190,10 @@ export default function AboutPage() {
                 <Image
                   src="/images/eco-logo-new.png"
                   alt="Eco System Logo"
-                  width={160}
-                  height={60}
+                  width={280}
+                  height={120}
                   className={styles.partnerLogo}
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "105px" }}
                 />
               </div>
               <h3 className={styles.partnerName}>Eco System</h3>
@@ -208,10 +208,10 @@ export default function AboutPage() {
                 <Image
                   src="/images/Saaphzone.jpeg"
                   alt="Saaphzone Technologies Logo"
-                  width={300}
-                  height={130}
+                  width={280}
+                  height={120}
                   className={styles.partnerLogo}
-                  style={{ objectFit: "contain", maxHeight: "115px", height: "auto" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "105px" }}
                 />
               </div>
               <h3 className={styles.partnerName}>Saaphzone Technologies</h3>

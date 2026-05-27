@@ -37,10 +37,10 @@ export default function Partners() {
                 <Image
                   src="/images/advance-analytik-logo.png"
                   alt="Advance Analytik Hungary"
-                  width={180}
-                  height={60}
+                  width={280}
+                  height={120}
                   className={`${styles.opLogo} advance-analytik-red`}
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "110px" }}
                 />
               </div>
               <h3 className={styles.opName}>Advance Analytik® — Hungary</h3>
@@ -65,10 +65,10 @@ export default function Partners() {
                 <Image
                   src="/images/eco-logo-new.png"
                   alt="Eco System Logo"
-                  width={180}
-                  height={60}
+                  width={280}
+                  height={120}
                   className={styles.opLogo}
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "110px" }}
                 />
               </div>
               <h3 className={styles.opName}>Eco System</h3>
@@ -84,10 +84,10 @@ export default function Partners() {
                 <Image
                   src="/images/Saaphzone.jpeg"
                   alt="Saaphzone Technologies Logo"
-                  width={300}
-                  height={130}
+                  width={280}
+                  height={120}
                   className={styles.opLogo}
-                  style={{ objectFit: "contain", maxHeight: "120px", height: "auto" }}
+                  style={{ objectFit: "contain", width: "100%", height: "auto", maxHeight: "110px" }}
                 />
               </div>
               <h3 className={styles.opName}>Saaphzone Technologies</h3>
