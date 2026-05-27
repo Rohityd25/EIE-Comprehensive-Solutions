@@ -66,11 +66,6 @@
   z-index: 10;
   max-width: 780px;
   padding-bottom: 8rem;
-  margin-left: auto;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
 /* ─── Logo ──────────────────────────────────────────────────────────────── */
@@ -182,12 +177,7 @@
 /* ─── Responsive ─────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .hero { padding-top: 6rem; }
-  .heroContent {
-    padding-bottom: 6rem;
-    margin-left: 0;
-    text-align: left;
-    align-items: flex-start;
-  }
+  .heroContent { padding-bottom: 6rem; }
 }
 
 @media (max-width: 480px) {
