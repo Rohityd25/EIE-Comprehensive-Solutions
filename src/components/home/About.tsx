@@ -46,7 +46,6 @@ export default function About() {
 
           {/* Content */}
           <ScrollReveal animation="fadeInRight" className={styles.content}>
-            <div className="badge badge-green" style={{ marginBottom: "1rem" }}>About EIE</div>
             <h2 className={styles.title}>
               Welcome to <span className="gradient-text">EIE Comprehensive Solutions</span>
             </h2>
